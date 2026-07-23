@@ -1,0 +1,55 @@
+{
+  "_instructions": "이 파일은 형식 견본입니다. 실제 직업/기술/자격증/전공 데이터는 워크넷, 커리어넷, NCS(국가직무능력표준) 등 실제 공식 출처에서 가져와 아래 배열을 채워주세요. sourceExternalId는 sources 배열의 externalId와 반드시 일치해야 합니다.",
+  "sources": [
+    {
+      "externalId": "<고유-식별자, 예: worknet-2026-0001>",
+      "organization": "<출처 기관명, 예: 워크넷>",
+      "title": "<자료 제목>",
+      "url": "<원문 URL>",
+      "publishedAt": null,
+      "accessedAt": "2026-07-24T00:00:00.000Z",
+      "license": null
+    }
+  ],
+  "categories": [{ "slug": "<카테고리-slug>", "name": "<카테고리명>", "displayOrder": 1 }],
+  "skills": [{ "slug": "<기술-slug>", "name": "<기술명>", "description": null }],
+  "qualifications": [
+    {
+      "slug": "<자격증-slug>",
+      "name": "<자격증명>",
+      "issuingOrganization": "<발급기관>",
+      "description": null
+    }
+  ],
+  "majors": [{ "slug": "<전공-slug>", "name": "<전공명>", "description": null }],
+  "occupations": [
+    {
+      "categorySlug": "<위 categories 중 하나의 slug>",
+      "slug": "<직업-slug>",
+      "name": "<직업명>",
+      "summary": "<한 줄 요약>",
+      "description": "<상세 설명>",
+      "outlook": null,
+      "skills": [
+        {
+          "slug": "<위 skills 중 하나의 slug>",
+          "importance": 3,
+          "displayOrder": 1,
+          "description": null,
+          "sourceExternalId": "<위 sources 중 하나의 externalId>"
+        }
+      ],
+      "qualifications": [],
+      "majors": [],
+      "competencies": [
+        {
+          "name": "<역량명>",
+          "description": "<역량 설명>",
+          "score": null,
+          "displayOrder": 1,
+          "sourceExternalId": "<위 sources 중 하나의 externalId>"
+        }
+      ]
+    }
+  ]
+}

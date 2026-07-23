@@ -34,6 +34,21 @@ Production-style local start:
 npm start
 ```
 
+## Occupation Data
+
+`GET /occupations`, `/interests`, roadmaps, and AI Q&A all read from the
+`Occupation`/`Skill`/`Qualification`/`Major`/`Source` tables, which start
+empty. Load real data with:
+
+```bash
+npm run seed:occupations -- data/occupations.template.json
+```
+
+Copy `data/occupations.template.json`, fill it with real occupation data from
+an authoritative source (NCS, 워크넷, 커리어넷, etc.), then run the command
+above against your file. See [Data import](docs/data-import.md) for the file
+format. This does not run automatically — it must be invoked manually.
+
 ## Docker
 
 ```bash

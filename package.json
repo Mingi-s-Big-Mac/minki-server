@@ -23,7 +23,8 @@
     "prisma:validate": "prisma validate",
     "prisma:migrate:dev": "prisma migrate dev",
     "prisma:migrate:deploy": "prisma migrate deploy",
-    "prisma:studio": "prisma studio"
+    "prisma:studio": "prisma studio",
+    "seed:occupations": "node --env-file-if-exists=.env scripts/seed-occupations.js"
   },
   "dependencies": {
     "@prisma/adapter-pg": "^7.9.0",
