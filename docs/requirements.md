@@ -4,7 +4,7 @@ The service helps students explore occupations, skills, qualifications, majors, 
 
 Implemented backend scope:
 
-- School email verification, sign-up, sign-in, refresh token rotation, sign-out, authenticated user lookup, password change, and soft account deletion.
+- School-domain-restricted sign-up (no email verification step, per hackathon time constraints), sign-in, sign-out, authenticated user lookup, password change, and soft account deletion. Single long-lived access token, no refresh token rotation.
 - User profile, activity list, and basic stats.
 - School and catalog metadata lists with search and pagination.
 - Occupation list, detail, suggestions, and 2-4 occupation comparison.

@@ -2,7 +2,6 @@
 
 - Actual allowed school email domains.
 - School list and grade range policy.
-- Real mail delivery service and sender identity.
 - Real NCS/public data source files, licensing, and import process.
 - Data refresh cycle and ownership.
 - AI server API contract for roadmap generation and Q&A.

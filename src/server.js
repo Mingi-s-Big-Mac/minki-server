@@ -1,7 +1,11 @@
+import { setDefaultResultOrder } from 'node:dns';
+
 import { createLogger } from './common/logger/logger.js';
 import { EnvironmentValidationError, getEnv } from './config/env.js';
 import { disconnectDatabase } from './config/prisma.js';
 import { createApp } from './app.js';
+
+setDefaultResultOrder('ipv4first');
 
 async function startServer() {
   const config = getEnv();

@@ -40,13 +40,8 @@ export const openApiDocument = {
       200: ok,
       503: { description: 'Database unavailable' },
     }),
-    '/api/v1/auth/email-verifications': post('Request email verification', ['Auth'], {
-      201: created,
-    }),
-    '/api/v1/auth/email-verifications/confirm': post('Confirm email verification', ['Auth']),
     '/api/v1/auth/sign-up': post('Sign up', ['Auth'], { 201: created }),
     '/api/v1/auth/sign-in': post('Sign in', ['Auth']),
-    '/api/v1/auth/refresh': post('Rotate refresh token', ['Auth']),
     '/api/v1/auth/sign-out': post('Sign out', ['Auth']),
     '/api/v1/auth/me': get(
       'Get authenticated user',

@@ -15,7 +15,7 @@ const envSchema = z.object({
   LOG_LEVEL: z.enum(logLevels),
   ALLOWED_EMAIL_DOMAINS: z.string().trim().optional().default(''),
   ACCESS_TOKEN_SECRET: z.string().trim().min(16).optional(),
-  ACCESS_TOKEN_EXPIRES_IN: z.string().trim().min(1).default('15m'),
+  ACCESS_TOKEN_EXPIRES_IN: z.string().trim().min(1).default('7d'),
   REFRESH_TOKEN_SECRET: z.string().trim().min(16).optional(),
   REFRESH_TOKEN_EXPIRES_IN: z.string().trim().min(1).default('30d'),
   EMAIL_VERIFICATION_EXPIRES_IN: z.string().trim().min(1).default('10m'),
@@ -69,7 +69,6 @@ export function parseEnv(values) {
   if (result.data.NODE_ENV === 'production') {
     const missingSecrets = [];
     if (!result.data.ACCESS_TOKEN_SECRET) missingSecrets.push('ACCESS_TOKEN_SECRET');
-    if (!result.data.REFRESH_TOKEN_SECRET) missingSecrets.push('REFRESH_TOKEN_SECRET');
 
     if (missingSecrets.length > 0) {
       throw new EnvironmentValidationError(

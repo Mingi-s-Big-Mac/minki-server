@@ -6,11 +6,8 @@ Public:
 
 - `GET /health`
 - `GET /health/db`
-- `POST /auth/email-verifications`
-- `POST /auth/email-verifications/confirm`
 - `POST /auth/sign-up`
 - `POST /auth/sign-in`
-- `POST /auth/refresh`
 - `POST /auth/sign-out`
 - `GET /schools`
 

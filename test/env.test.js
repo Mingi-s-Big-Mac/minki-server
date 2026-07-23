@@ -44,10 +44,8 @@ describe('environment validation', () => {
     );
   });
 
-  it('requires token secrets in production', () => {
-    expect(() => parseEnv({ ...validEnv, NODE_ENV: 'production' })).toThrow(
-      /ACCESS_TOKEN_SECRET.*REFRESH_TOKEN_SECRET/,
-    );
+  it('requires access token secret in production', () => {
+    expect(() => parseEnv({ ...validEnv, NODE_ENV: 'production' })).toThrow(/ACCESS_TOKEN_SECRET/);
   });
 
   it('stops before listening when required variables are missing', () => {
