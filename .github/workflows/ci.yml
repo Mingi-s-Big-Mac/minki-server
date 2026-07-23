@@ -19,6 +19,9 @@ jobs:
       DATABASE_URL: postgresql://test:test@localhost:5432/test?schema=public
       CORS_ORIGIN: http://localhost:3000
       LOG_LEVEL: silent
+      ALLOWED_EMAIL_DOMAINS: example.ac.kr
+      ACCESS_TOKEN_SECRET: ci_access_token_secret_for_tests
+      REFRESH_TOKEN_SECRET: ci_refresh_token_secret_for_tests
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
