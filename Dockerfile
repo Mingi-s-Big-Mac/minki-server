@@ -30,6 +30,8 @@ COPY --from=builder --chown=node:node /app/src ./src
 COPY --from=builder --chown=node:node /app/prisma ./prisma
 COPY --chown=node:node prisma.config.js ./prisma.config.js
 COPY --chown=node:node package.json ./package.json
+COPY --chown=node:node scripts ./scripts
+COPY --chown=node:node data ./data
 USER node
 EXPOSE 3000
 HEALTHCHECK --interval=30s --timeout=5s --start-period=10s --retries=3 \
