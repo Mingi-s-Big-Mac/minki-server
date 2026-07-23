@@ -74,6 +74,24 @@ describe('auth service', () => {
     ).rejects.toMatchObject({ code: 'EMAIL_DOMAIN_NOT_ALLOWED' });
   });
 
+  it('reports an unavailable email delivery service without leaking provider errors', async () => {
+    const mailProvider = {
+      enabled: true,
+      sendEmailVerification: async () => {
+        throw new Error('SMTP authentication failed');
+      },
+    };
+    const service = createAuthService({
+      repository: createRepository(),
+      mailProvider,
+      config,
+    });
+
+    await expect(
+      service.requestEmailVerification({ email: 'student@example.ac.kr', purpose: 'SIGN_UP' }),
+    ).rejects.toMatchObject({ code: 'SERVICE_UNAVAILABLE', statusCode: 503 });
+  });
+
   it('rejects sign up before email verification', async () => {
     const repository = createRepository();
     const service = createAuthService({ repository, config });
@@ -91,7 +109,11 @@ describe('auth service', () => {
 
   it('signs up, signs in, rotates refresh tokens and signs out', async () => {
     const repository = createRepository();
-    const service = createAuthService({ repository, config });
+    const service = createAuthService({
+      repository,
+      config,
+      mailProvider: { enabled: true, sendEmailVerification: async () => ({ sent: true }) },
+    });
     const verification = await service.requestEmailVerification({
       email: 'student@example.ac.kr',
       purpose: 'SIGN_UP',

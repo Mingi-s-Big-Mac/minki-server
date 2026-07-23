@@ -42,6 +42,7 @@ export const openApiDocument = {
     }),
     '/api/v1/auth/email-verifications': post('Request email verification', ['Auth'], {
       201: created,
+      503: { description: 'Email delivery service unavailable' },
     }),
     '/api/v1/auth/email-verifications/confirm': post('Confirm email verification', ['Auth']),
     '/api/v1/auth/sign-up': post('Sign up', ['Auth'], { 201: created }),

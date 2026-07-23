@@ -1,5 +1,6 @@
 import nodemailer from 'nodemailer';
 
+import { ServiceUnavailableError } from '../../common/errors/app-error.js';
 import { getEnv } from '../../config/env.js';
 
 export function createMailProvider(config = getEnv()) {
@@ -10,7 +11,7 @@ export function createMailProvider(config = getEnv()) {
     return {
       enabled: false,
       async sendEmailVerification() {
-        return { skipped: true };
+        throw new ServiceUnavailableError('이메일 발송 서비스가 설정되지 않았습니다.');
       },
     };
   }
@@ -25,12 +26,19 @@ export function createMailProvider(config = getEnv()) {
   return {
     enabled: true,
     async sendEmailVerification({ email, code }) {
-      await transporter.sendMail({
-        from: smtp.from,
-        to: email,
-        subject: 'Minki email verification',
-        text: `Your verification code is ${code}.`,
-      });
+      try {
+        await transporter.sendMail({
+          from: smtp.from,
+          to: email,
+          subject: 'Minki email verification',
+          text: `Your verification code is ${code}.`,
+        });
+      } catch {
+        throw new ServiceUnavailableError(
+          '이메일 인증번호 발송에 실패했습니다. 잠시 후 다시 시도해주세요.',
+        );
+      }
+
       return { sent: true };
     },
   };

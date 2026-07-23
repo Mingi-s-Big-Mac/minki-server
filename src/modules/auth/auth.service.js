@@ -1,6 +1,6 @@
 import { randomInt } from 'node:crypto';
 
-import { AppError } from '../../common/errors/app-error.js';
+import { AppError, ServiceUnavailableError } from '../../common/errors/app-error.js';
 import { hashPassword, verifyPassword } from '../../common/security/password.js';
 import {
   createOpaqueToken,
@@ -68,7 +68,16 @@ export function createAuthService({
         expiresAt: expiresAtFromNow(config.emailVerificationExpiresIn),
       });
 
-      await mailProvider.sendEmailVerification({ email, code, purpose });
+      try {
+        await mailProvider.sendEmailVerification({ email, code, purpose });
+      } catch (error) {
+        if (error instanceof AppError) {
+          throw error;
+        }
+        throw new ServiceUnavailableError(
+          '이메일 인증번호 발송에 실패했습니다. 잠시 후 다시 시도해주세요.',
+        );
+      }
 
       return {
         id: verification.id,

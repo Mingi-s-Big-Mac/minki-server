@@ -50,6 +50,33 @@ describe('environment validation', () => {
     );
   });
 
+  it('requires complete SMTP configuration when email delivery is enabled', () => {
+    expect(() => parseEnv({ ...validEnv, SMTP_HOST: 'smtp.example.com' })).toThrow(
+      /SMTP_HOST, SMTP_PORT, and SMTP_FROM/,
+    );
+    expect(() =>
+      parseEnv({
+        ...validEnv,
+        SMTP_HOST: 'smtp.example.com',
+        SMTP_PORT: '587',
+        SMTP_FROM: 'no-reply@example.com',
+        SMTP_USER: 'smtp-user',
+      }),
+    ).toThrow(/SMTP_PASSWORD/);
+  });
+
+  it('treats empty optional provider variables as unset', () => {
+    expect(
+      parseEnv({
+        ...validEnv,
+        SMTP_HOST: '',
+        SMTP_PORT: '',
+        SMTP_FROM: '',
+        AI_SERVICE_URL: '',
+      }),
+    ).toMatchObject({ smtp: { host: undefined, port: undefined, from: undefined } });
+  });
+
   it('stops before listening when required variables are missing', () => {
     const childEnv = { ...process.env };
     for (const name of ['NODE_ENV', 'PORT', 'DATABASE_URL', 'CORS_ORIGIN', 'LOG_LEVEL']) {
