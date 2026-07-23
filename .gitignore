@@ -1,0 +1,12 @@
+node_modules/
+coverage/
+generated/
+.env
+.env.*
+!.env.example
+*.log
+npm-debug.log*
+.DS_Store
+.idea/
+.vscode/
+prompt.md
