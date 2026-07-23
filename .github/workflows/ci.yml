@@ -105,6 +105,8 @@ jobs:
           git reset --hard origin/main
           echo "Deploying commit: $(git rev-parse HEAD)"
 
+          docker builder prune --force
+          docker image prune --force
           docker compose build
           docker compose up -d
 
