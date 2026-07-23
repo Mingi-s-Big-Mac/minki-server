@@ -13,13 +13,16 @@ const validEnv = {
 
 describe('environment validation', () => {
   it('parses and normalizes valid values', () => {
-    expect(parseEnv(validEnv)).toEqual({
+    expect(parseEnv(validEnv)).toMatchObject({
       nodeEnv: 'development',
       port: 3000,
       databaseUrl: validEnv.DATABASE_URL,
       corsOrigins: ['http://localhost:3000', 'https://example.com'],
       logLevel: 'info',
       trustProxy: false,
+      allowedEmailDomains: [],
+      accessTokenSecret: 'development-access-token-secret',
+      refreshTokenSecret: 'development-refresh-token-secret',
     });
   });
 
@@ -38,6 +41,12 @@ describe('environment validation', () => {
   it('rejects malformed CORS origins', () => {
     expect(() => parseEnv({ ...validEnv, CORS_ORIGIN: 'http://localhost:3000/path' })).toThrow(
       /CORS_ORIGIN/,
+    );
+  });
+
+  it('requires token secrets in production', () => {
+    expect(() => parseEnv({ ...validEnv, NODE_ENV: 'production' })).toThrow(
+      /ACCESS_TOKEN_SECRET.*REFRESH_TOKEN_SECRET/,
     );
   });
 

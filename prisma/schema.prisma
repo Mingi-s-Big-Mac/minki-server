@@ -6,3 +6,420 @@ generator client {
 datasource db {
   provider = "postgresql"
 }
+
+enum UserStatus {
+  ACTIVE
+  DELETED
+  SUSPENDED
+}
+
+enum EmailVerificationPurpose {
+  SIGN_UP
+  PASSWORD_RESET
+}
+
+enum RoadmapStatus {
+  PENDING
+  GENERATING
+  COMPLETED
+  FAILED
+}
+
+enum RoadmapItemType {
+  TASK
+  SKILL
+  QUALIFICATION
+  COURSE
+  EXPERIENCE
+}
+
+enum MessageRole {
+  USER
+  ASSISTANT
+}
+
+enum MessageStatus {
+  SAVED
+  COMPLETED
+  FAILED
+}
+
+model User {
+  id               String               @id @default(uuid()) @db.Uuid
+  email            String               @unique
+  passwordHash     String
+  nickname         String
+  grade            Int
+  majorText        String
+  majorId          String?              @db.Uuid
+  schoolId         String?              @db.Uuid
+  emailVerifiedAt  DateTime?
+  status           UserStatus           @default(ACTIVE)
+  lastLoginAt      DateTime?
+  createdAt        DateTime             @default(now())
+  updatedAt        DateTime             @updatedAt
+  deletedAt        DateTime?
+  major            Major?               @relation(fields: [majorId], references: [id], onDelete: SetNull)
+  school           School?              @relation(fields: [schoolId], references: [id], onDelete: SetNull)
+  refreshTokens    RefreshToken[]
+  interests        InterestOccupation[]
+  recentSearches   RecentSearch[]
+  activities       UserActivity[]
+  roadmaps         Roadmap[]
+  conversations    Conversation[]
+
+  @@index([status, createdAt])
+  @@index([schoolId])
+  @@index([majorId])
+}
+
+model School {
+  id          String   @id @default(uuid()) @db.Uuid
+  name        String
+  emailDomain String   @unique
+  active      Boolean  @default(true)
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+  users       User[]
+
+  @@index([active, name])
+}
+
+model EmailVerification {
+  id           String                   @id @default(uuid()) @db.Uuid
+  email        String
+  codeHash     String
+  purpose      EmailVerificationPurpose
+  expiresAt    DateTime
+  verifiedAt   DateTime?
+  attemptCount Int                      @default(0)
+  createdAt    DateTime                 @default(now())
+
+  @@index([email, purpose, createdAt])
+}
+
+model RefreshToken {
+  id                String         @id @default(uuid()) @db.Uuid
+  userId            String         @db.Uuid
+  tokenHash         String         @unique
+  expiresAt         DateTime
+  revokedAt         DateTime?
+  replacedByTokenId String?        @db.Uuid
+  createdAt         DateTime       @default(now())
+  user              User           @relation(fields: [userId], references: [id], onDelete: Restrict)
+  replacedByToken   RefreshToken?  @relation("RefreshTokenReplacement", fields: [replacedByTokenId], references: [id], onDelete: SetNull)
+  replacedTokens    RefreshToken[] @relation("RefreshTokenReplacement")
+
+  @@index([userId, createdAt])
+  @@index([expiresAt])
+}
+
+model OccupationCategory {
+  id           String       @id @default(uuid()) @db.Uuid
+  name         String
+  slug         String       @unique
+  displayOrder Int          @default(0)
+  active       Boolean      @default(true)
+  occupations  Occupation[]
+
+  @@index([active, displayOrder])
+}
+
+model Occupation {
+  id             String                    @id @default(uuid()) @db.Uuid
+  categoryId     String                    @db.Uuid
+  name           String
+  slug           String                    @unique
+  summary        String
+  description    String
+  outlook        String?
+  active         Boolean                   @default(true)
+  createdAt      DateTime                  @default(now())
+  updatedAt      DateTime                  @updatedAt
+  category       OccupationCategory        @relation(fields: [categoryId], references: [id], onDelete: Restrict)
+  skills         OccupationSkill[]
+  qualifications OccupationQualification[]
+  majors         OccupationMajor[]
+  competencies   Competency[]
+  interests      InterestOccupation[]
+  roadmaps       Roadmap[]
+
+  @@index([active, name])
+  @@index([categoryId, active])
+}
+
+model Skill {
+  id          String            @id @default(uuid()) @db.Uuid
+  name        String
+  slug        String            @unique
+  description String?
+  active      Boolean           @default(true)
+  occupations OccupationSkill[]
+  roadmapItems RoadmapItem[]
+
+  @@index([active, name])
+}
+
+model Qualification {
+  id                  String                    @id @default(uuid()) @db.Uuid
+  name                String
+  slug                String                    @unique
+  description         String?
+  issuingOrganization String?
+  active              Boolean                   @default(true)
+  occupations         OccupationQualification[]
+  roadmapItems        RoadmapItem[]
+
+  @@index([active, name])
+}
+
+model Major {
+  id          String            @id @default(uuid()) @db.Uuid
+  name        String
+  slug        String            @unique
+  description String?
+  active      Boolean           @default(true)
+  users       User[]
+  occupations OccupationMajor[]
+
+  @@index([active, name])
+}
+
+model OccupationSkill {
+  occupationId String      @db.Uuid
+  skillId      String      @db.Uuid
+  importance   Int?
+  displayOrder Int         @default(0)
+  description  String?
+  sourceId     String?     @db.Uuid
+  occupation   Occupation  @relation(fields: [occupationId], references: [id], onDelete: Restrict)
+  skill        Skill       @relation(fields: [skillId], references: [id], onDelete: Restrict)
+  source       Source?     @relation(fields: [sourceId], references: [id], onDelete: SetNull)
+
+  @@id([occupationId, skillId])
+  @@index([skillId])
+}
+
+model OccupationQualification {
+  occupationId    String        @db.Uuid
+  qualificationId String        @db.Uuid
+  importance      Int?
+  displayOrder    Int           @default(0)
+  description     String?
+  sourceId        String?       @db.Uuid
+  occupation      Occupation    @relation(fields: [occupationId], references: [id], onDelete: Restrict)
+  qualification   Qualification @relation(fields: [qualificationId], references: [id], onDelete: Restrict)
+  source          Source?       @relation(fields: [sourceId], references: [id], onDelete: SetNull)
+
+  @@id([occupationId, qualificationId])
+  @@index([qualificationId])
+}
+
+model OccupationMajor {
+  occupationId String     @db.Uuid
+  majorId      String     @db.Uuid
+  importance   Int?
+  displayOrder Int        @default(0)
+  description  String?
+  sourceId     String?    @db.Uuid
+  occupation   Occupation @relation(fields: [occupationId], references: [id], onDelete: Restrict)
+  major        Major      @relation(fields: [majorId], references: [id], onDelete: Restrict)
+  source       Source?    @relation(fields: [sourceId], references: [id], onDelete: SetNull)
+
+  @@id([occupationId, majorId])
+  @@index([majorId])
+}
+
+model Competency {
+  id           String     @id @default(uuid()) @db.Uuid
+  occupationId String     @db.Uuid
+  name         String
+  description  String
+  score        Int?
+  displayOrder Int        @default(0)
+  sourceId     String     @db.Uuid
+  occupation   Occupation @relation(fields: [occupationId], references: [id], onDelete: Restrict)
+  source       Source     @relation(fields: [sourceId], references: [id], onDelete: Restrict)
+
+  @@index([occupationId, displayOrder])
+}
+
+model Source {
+  id                       String                    @id @default(uuid()) @db.Uuid
+  organization             String
+  title                    String
+  url                      String
+  publishedAt              DateTime?
+  accessedAt               DateTime
+  license                  String?
+  externalId               String?
+  createdAt                DateTime                  @default(now())
+  updatedAt                DateTime                  @updatedAt
+  documents                SourceDocument[]
+  occupationSkills         OccupationSkill[]
+  occupationQualifications OccupationQualification[]
+  occupationMajors         OccupationMajor[]
+  competencies             Competency[]
+  roadmapItems             RoadmapItem[]
+  citations                Citation[]
+
+  @@index([organization])
+  @@index([externalId])
+}
+
+model SourceDocument {
+  id        String        @id @default(uuid()) @db.Uuid
+  sourceId  String        @db.Uuid
+  title     String
+  content   String
+  checksum  String?
+  metadata  Json?
+  createdAt DateTime      @default(now())
+  updatedAt DateTime      @updatedAt
+  source    Source        @relation(fields: [sourceId], references: [id], onDelete: Restrict)
+  chunks    SourceChunk[]
+
+  @@index([sourceId])
+}
+
+model SourceChunk {
+  id               String           @id @default(uuid()) @db.Uuid
+  sourceDocumentId String           @db.Uuid
+  content          String
+  chunkIndex       Int
+  metadata         Json?
+  embedding        Unsupported("vector")?
+  sourceDocument   SourceDocument   @relation(fields: [sourceDocumentId], references: [id], onDelete: Restrict)
+  citations        Citation[]
+
+  @@unique([sourceDocumentId, chunkIndex])
+}
+
+model InterestOccupation {
+  id           String     @id @default(uuid()) @db.Uuid
+  userId       String     @db.Uuid
+  occupationId String     @db.Uuid
+  createdAt    DateTime   @default(now())
+  user         User       @relation(fields: [userId], references: [id], onDelete: Restrict)
+  occupation   Occupation @relation(fields: [occupationId], references: [id], onDelete: Restrict)
+
+  @@unique([userId, occupationId])
+  @@index([userId, createdAt])
+}
+
+model RecentSearch {
+  id        String   @id @default(uuid()) @db.Uuid
+  userId    String   @db.Uuid
+  query     String
+  filters   Json?
+  createdAt DateTime @default(now())
+  user      User     @relation(fields: [userId], references: [id], onDelete: Restrict)
+
+  @@index([userId, createdAt])
+}
+
+model UserActivity {
+  id         String   @id @default(uuid()) @db.Uuid
+  userId     String   @db.Uuid
+  type       String
+  targetType String?
+  targetId   String?
+  metadata   Json?
+  createdAt  DateTime @default(now())
+  user       User     @relation(fields: [userId], references: [id], onDelete: Restrict)
+
+  @@index([userId, createdAt])
+  @@index([type, createdAt])
+}
+
+model Roadmap {
+  id                 String            @id @default(uuid()) @db.Uuid
+  userId             String            @db.Uuid
+  title              String
+  grade              Int
+  majorText          String
+  targetOccupationId String            @db.Uuid
+  inputSkills        Json?
+  status             RoadmapStatus     @default(PENDING)
+  createdAt          DateTime          @default(now())
+  updatedAt          DateTime          @updatedAt
+  user               User              @relation(fields: [userId], references: [id], onDelete: Restrict)
+  targetOccupation   Occupation        @relation(fields: [targetOccupationId], references: [id], onDelete: Restrict)
+  semesters          RoadmapSemester[]
+
+  @@index([userId, createdAt])
+  @@index([targetOccupationId])
+}
+
+model RoadmapSemester {
+  id            String        @id @default(uuid()) @db.Uuid
+  roadmapId     String        @db.Uuid
+  semesterOrder Int
+  title         String
+  description   String?
+  createdAt     DateTime      @default(now())
+  roadmap       Roadmap       @relation(fields: [roadmapId], references: [id], onDelete: Restrict)
+  items         RoadmapItem[]
+
+  @@unique([roadmapId, semesterOrder])
+}
+
+model RoadmapItem {
+  id                     String            @id @default(uuid()) @db.Uuid
+  roadmapSemesterId      String            @db.Uuid
+  type                   RoadmapItemType
+  title                  String
+  description            String?
+  relatedSkillId         String?           @db.Uuid
+  relatedQualificationId String?           @db.Uuid
+  sourceId               String?           @db.Uuid
+  displayOrder           Int               @default(0)
+  roadmapSemester        RoadmapSemester   @relation(fields: [roadmapSemesterId], references: [id], onDelete: Restrict)
+  relatedSkill           Skill?            @relation(fields: [relatedSkillId], references: [id], onDelete: SetNull)
+  relatedQualification   Qualification?    @relation(fields: [relatedQualificationId], references: [id], onDelete: SetNull)
+  source                 Source?           @relation(fields: [sourceId], references: [id], onDelete: SetNull)
+
+  @@index([roadmapSemesterId, displayOrder])
+}
+
+model Conversation {
+  id        String    @id @default(uuid()) @db.Uuid
+  userId    String    @db.Uuid
+  title     String?
+  createdAt DateTime  @default(now())
+  updatedAt DateTime  @updatedAt
+  deletedAt DateTime?
+  user      User      @relation(fields: [userId], references: [id], onDelete: Restrict)
+  messages  Message[]
+
+  @@index([userId, updatedAt])
+}
+
+model Message {
+  id             String        @id @default(uuid()) @db.Uuid
+  conversationId String        @db.Uuid
+  role           MessageRole
+  content        String
+  status         MessageStatus @default(SAVED)
+  createdAt      DateTime      @default(now())
+  conversation   Conversation  @relation(fields: [conversationId], references: [id], onDelete: Restrict)
+  citations      Citation[]
+
+  @@index([conversationId, createdAt])
+}
+
+model Citation {
+  id             String       @id @default(uuid()) @db.Uuid
+  messageId      String       @db.Uuid
+  sourceId       String       @db.Uuid
+  sourceChunkId  String?      @db.Uuid
+  citationNumber Int
+  quotedText     String?
+  relevanceScore Float?
+  createdAt      DateTime     @default(now())
+  message        Message      @relation(fields: [messageId], references: [id], onDelete: Restrict)
+  source         Source       @relation(fields: [sourceId], references: [id], onDelete: Restrict)
+  sourceChunk    SourceChunk? @relation(fields: [sourceChunkId], references: [id], onDelete: SetNull)
+
+  @@unique([messageId, citationNumber])
+}
