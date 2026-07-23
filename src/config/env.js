@@ -1,6 +1,14 @@
 import { z } from 'zod';
 
 const logLevels = ['fatal', 'error', 'warn', 'info', 'debug', 'trace', 'silent'];
+const optionalTrimmedString = z.preprocess(
+  (value) => (typeof value === 'string' && value.trim() === '' ? undefined : value),
+  z.string().trim().optional(),
+);
+const optionalPort = z.preprocess(
+  (value) => (typeof value === 'string' && value.trim() === '' ? undefined : value),
+  z.coerce.number().int().min(1).max(65535).optional(),
+);
 
 const envSchema = z.object({
   NODE_ENV: z.enum(['development', 'test', 'production']),
@@ -19,14 +27,20 @@ const envSchema = z.object({
   REFRESH_TOKEN_SECRET: z.string().trim().min(16).optional(),
   REFRESH_TOKEN_EXPIRES_IN: z.string().trim().min(1).default('30d'),
   EMAIL_VERIFICATION_EXPIRES_IN: z.string().trim().min(1).default('10m'),
-  SMTP_HOST: z.string().trim().optional(),
-  SMTP_PORT: z.coerce.number().int().min(1).max(65535).optional(),
+  SMTP_HOST: optionalTrimmedString,
+  SMTP_PORT: optionalPort,
   SMTP_SECURE: z.coerce.boolean().optional().default(false),
-  SMTP_USER: z.string().trim().optional(),
-  SMTP_PASSWORD: z.string().optional(),
-  SMTP_FROM: z.string().trim().optional(),
-  AI_SERVICE_URL: z.string().url().optional(),
-  AI_SERVICE_API_KEY: z.string().optional(),
+  SMTP_USER: optionalTrimmedString,
+  SMTP_PASSWORD: z.preprocess((value) => (value === '' ? undefined : value), z.string().optional()),
+  SMTP_FROM: optionalTrimmedString,
+  AI_SERVICE_URL: z.preprocess(
+    (value) => (typeof value === 'string' && value.trim() === '' ? undefined : value),
+    z.string().url().optional(),
+  ),
+  AI_SERVICE_API_KEY: z.preprocess(
+    (value) => (value === '' ? undefined : value),
+    z.string().optional(),
+  ),
   AI_SERVICE_TIMEOUT_MS: z.coerce.number().int().min(100).max(60000).default(5000),
 });
 
@@ -64,6 +78,31 @@ export function parseEnv(values) {
     throw new EnvironmentValidationError([
       { path: ['CORS_ORIGIN'], message: 'must contain valid HTTP origin values' },
     ]);
+  }
+
+  const smtpConfiguration = result.data;
+  const smtpRequiredNames = ['SMTP_HOST', 'SMTP_PORT', 'SMTP_FROM'];
+  const configuredSmtpRequiredNames = smtpRequiredNames.filter(
+    (name) => smtpConfiguration[name] !== undefined,
+  );
+  const smtpIssues = [];
+  if (
+    configuredSmtpRequiredNames.length > 0 &&
+    configuredSmtpRequiredNames.length !== smtpRequiredNames.length
+  ) {
+    smtpIssues.push({
+      path: ['SMTP_HOST'],
+      message: 'SMTP_HOST, SMTP_PORT, and SMTP_FROM must be configured together',
+    });
+  }
+  if (smtpConfiguration.SMTP_USER && !smtpConfiguration.SMTP_PASSWORD) {
+    smtpIssues.push({ path: ['SMTP_PASSWORD'], message: 'is required when SMTP_USER is set' });
+  }
+  if (!smtpConfiguration.SMTP_USER && smtpConfiguration.SMTP_PASSWORD) {
+    smtpIssues.push({ path: ['SMTP_USER'], message: 'is required when SMTP_PASSWORD is set' });
+  }
+  if (smtpIssues.length > 0) {
+    throw new EnvironmentValidationError(smtpIssues);
   }
 
   if (result.data.NODE_ENV === 'production') {

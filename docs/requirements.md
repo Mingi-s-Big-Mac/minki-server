@@ -13,10 +13,11 @@ Implemented backend scope:
 - Roadmap creation model and API. If AI generation is not configured, the created roadmap is marked `FAILED` and no fake official content is generated.
 - Conversation and message APIs. If AI generation is not configured, user and failed assistant messages are saved and no fake citations are generated.
 - Source, source document, chunk, and citation data structures.
+- GitHub Actions CI and automatic EC2 deployment with health checks and application rollback.
 
 Not implemented:
 
 - Admin features.
-- Redis, Kafka, Elasticsearch, SSE, WebSocket, Kubernetes, AWS, EC2 deployment, or CD workflow.
+- Redis, Kafka, Elasticsearch, SSE, WebSocket, or Kubernetes.
 - Real public data ingestion.
 - Real AI provider contract.
