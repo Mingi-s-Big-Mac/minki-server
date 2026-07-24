@@ -71,7 +71,14 @@ export function createRoadmapsRepository(prisma = getPrismaClient()) {
       return prisma.roadmap.findFirst({ where: { id, userId }, include: roadmapInclude });
     },
     delete(userId, id) {
-      return prisma.roadmap.deleteMany({ where: { id, userId } });
+      return prisma.$transaction(async (tx) => {
+        const roadmap = await tx.roadmap.findFirst({ where: { id, userId } });
+        if (!roadmap) return { count: 0 };
+
+        await tx.roadmapItem.deleteMany({ where: { roadmapSemester: { roadmapId: id } } });
+        await tx.roadmapSemester.deleteMany({ where: { roadmapId: id } });
+        return tx.roadmap.deleteMany({ where: { id, userId } });
+      });
     },
   };
 }

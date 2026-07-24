@@ -1501,59 +1501,6 @@
     {
       "categorySlug": "cat-1",
       "slug": "occ-1",
-      "name": "백엔드 개발자",
-      "summary": "(DEMO) 백엔드 개발자 직무 테스트용 요약입니다.",
-      "description": "(DEMO placeholder) 실제 공식 데이터가 아닙니다. IT·개발 분야에서 활동하는 백엔드 개발자 직무에 대한 테스트용 설명입니다.",
-      "skills": [
-        {
-          "slug": "python",
-          "sourceExternalId": "BULK-DUMMY-source-1"
-        },
-        {
-          "slug": "sql",
-          "sourceExternalId": "BULK-DUMMY-source-1"
-        }
-      ],
-      "qualifications": [
-        {
-          "slug": "engineer-info-processing",
-          "sourceExternalId": "BULK-DUMMY-source-1"
-        }
-      ],
-      "majors": [
-        {
-          "slug": "computer-science",
-          "sourceExternalId": "BULK-DUMMY-source-1"
-        }
-      ]
-    },
-    {
-      "categorySlug": "cat-1",
-      "slug": "occ-2",
-      "name": "프론트엔드 개발자",
-      "summary": "(DEMO) 프론트엔드 개발자 직무 테스트용 요약입니다.",
-      "description": "(DEMO placeholder) 실제 공식 데이터가 아닙니다. IT·개발 분야에서 활동하는 프론트엔드 개발자 직무에 대한 테스트용 설명입니다.",
-      "skills": [
-        {
-          "slug": "javascript",
-          "sourceExternalId": "BULK-DUMMY-source-1"
-        },
-        {
-          "slug": "react",
-          "sourceExternalId": "BULK-DUMMY-source-1"
-        }
-      ],
-      "qualifications": [],
-      "majors": [
-        {
-          "slug": "computer-science",
-          "sourceExternalId": "BULK-DUMMY-source-1"
-        }
-      ]
-    },
-    {
-      "categorySlug": "cat-1",
-      "slug": "occ-3",
       "name": "모바일 앱 개발자",
       "summary": "(DEMO) 모바일 앱 개발자 직무 테스트용 요약입니다.",
       "description": "(DEMO placeholder) 실제 공식 데이터가 아닙니다. IT·개발 분야에서 활동하는 모바일 앱 개발자 직무에 대한 테스트용 설명입니다.",
@@ -1582,7 +1529,7 @@
     },
     {
       "categorySlug": "cat-1",
-      "slug": "occ-4",
+      "slug": "occ-2",
       "name": "데이터 엔지니어",
       "summary": "(DEMO) 데이터 엔지니어 직무 테스트용 요약입니다.",
       "description": "(DEMO placeholder) 실제 공식 데이터가 아닙니다. IT·개발 분야에서 활동하는 데이터 엔지니어 직무에 대한 테스트용 설명입니다.",
@@ -1611,7 +1558,7 @@
     },
     {
       "categorySlug": "cat-1",
-      "slug": "occ-5",
+      "slug": "occ-3",
       "name": "DevOps 엔지니어",
       "summary": "(DEMO) DevOps 엔지니어 직무 테스트용 요약입니다.",
       "description": "(DEMO placeholder) 실제 공식 데이터가 아닙니다. IT·개발 분야에서 활동하는 DevOps 엔지니어 직무에 대한 테스트용 설명입니다.",
@@ -1640,7 +1587,7 @@
     },
     {
       "categorySlug": "cat-1",
-      "slug": "occ-6",
+      "slug": "occ-4",
       "name": "정보보안 전문가",
       "summary": "(DEMO) 정보보안 전문가 직무 테스트용 요약입니다.",
       "description": "(DEMO placeholder) 실제 공식 데이터가 아닙니다. IT·개발 분야에서 활동하는 정보보안 전문가 직무에 대한 테스트용 설명입니다.",
@@ -1660,7 +1607,7 @@
     },
     {
       "categorySlug": "cat-1",
-      "slug": "occ-7",
+      "slug": "occ-5",
       "name": "QA 엔지니어",
       "summary": "(DEMO) QA 엔지니어 직무 테스트용 요약입니다.",
       "description": "(DEMO placeholder) 실제 공식 데이터가 아닙니다. IT·개발 분야에서 활동하는 QA 엔지니어 직무에 대한 테스트용 설명입니다.",
@@ -1684,7 +1631,7 @@
     },
     {
       "categorySlug": "cat-1",
-      "slug": "occ-8",
+      "slug": "occ-6",
       "name": "머신러닝 엔지니어",
       "summary": "(DEMO) 머신러닝 엔지니어 직무 테스트용 요약입니다.",
       "description": "(DEMO placeholder) 실제 공식 데이터가 아닙니다. IT·개발 분야에서 활동하는 머신러닝 엔지니어 직무에 대한 테스트용 설명입니다.",
@@ -1713,7 +1660,7 @@
     },
     {
       "categorySlug": "cat-1",
-      "slug": "occ-9",
+      "slug": "occ-7",
       "name": "게임 클라이언트 개발자",
       "summary": "(DEMO) 게임 클라이언트 개발자 직무 테스트용 요약입니다.",
       "description": "(DEMO placeholder) 실제 공식 데이터가 아닙니다. IT·개발 분야에서 활동하는 게임 클라이언트 개발자 직무에 대한 테스트용 설명입니다.",
@@ -1737,7 +1684,7 @@
     },
     {
       "categorySlug": "cat-1",
-      "slug": "occ-10",
+      "slug": "occ-8",
       "name": "클라우드 엔지니어",
       "summary": "(DEMO) 클라우드 엔지니어 직무 테스트용 요약입니다.",
       "description": "(DEMO placeholder) 실제 공식 데이터가 아닙니다. IT·개발 분야에서 활동하는 클라우드 엔지니어 직무에 대한 테스트용 설명입니다.",
@@ -1766,31 +1713,31 @@
     },
     {
       "categorySlug": "cat-2",
-      "slug": "occ-11",
-      "name": "UX 디자이너",
-      "summary": "(DEMO) UX 디자이너 직무 테스트용 요약입니다.",
-      "description": "(DEMO placeholder) 실제 공식 데이터가 아닙니다. 디자인 분야에서 활동하는 UX 디자이너 직무에 대한 테스트용 설명입니다.",
+      "slug": "occ-9",
+      "name": "모션 디자이너",
+      "summary": "(DEMO) 모션 디자이너 직무 테스트용 요약입니다.",
+      "description": "(DEMO placeholder) 실제 공식 데이터가 아닙니다. 디자인 분야에서 활동하는 모션 디자이너 직무에 대한 테스트용 설명입니다.",
       "skills": [
         {
-          "slug": "skill-68",
+          "slug": "skill-61",
           "sourceExternalId": "BULK-DUMMY-source-1"
         },
         {
-          "slug": "figma",
+          "slug": "skill-70",
           "sourceExternalId": "BULK-DUMMY-source-1"
         }
       ],
       "qualifications": [],
       "majors": [
         {
-          "slug": "design",
+          "slug": "major-40",
           "sourceExternalId": "BULK-DUMMY-source-1"
         }
       ]
     },
     {
       "categorySlug": "cat-2",
-      "slug": "occ-12",
+      "slug": "occ-10",
       "name": "UI 디자이너",
       "summary": "(DEMO) UI 디자이너 직무 테스트용 요약입니다.",
       "description": "(DEMO placeholder) 실제 공식 데이터가 아닙니다. 디자인 분야에서 활동하는 UI 디자이너 직무에 대한 테스트용 설명입니다.",
@@ -1819,7 +1766,7 @@
     },
     {
       "categorySlug": "cat-2",
-      "slug": "occ-13",
+      "slug": "occ-11",
       "name": "그래픽 디자이너",
       "summary": "(DEMO) 그래픽 디자이너 직무 테스트용 요약입니다.",
       "description": "(DEMO placeholder) 실제 공식 데이터가 아닙니다. 디자인 분야에서 활동하는 그래픽 디자이너 직무에 대한 테스트용 설명입니다.",
@@ -1848,7 +1795,7 @@
     },
     {
       "categorySlug": "cat-2",
-      "slug": "occ-14",
+      "slug": "occ-12",
       "name": "제품 디자이너",
       "summary": "(DEMO) 제품 디자이너 직무 테스트용 요약입니다.",
       "description": "(DEMO placeholder) 실제 공식 데이터가 아닙니다. 디자인 분야에서 활동하는 제품 디자이너 직무에 대한 테스트용 설명입니다.",
@@ -1877,7 +1824,7 @@
     },
     {
       "categorySlug": "cat-2",
-      "slug": "occ-15",
+      "slug": "occ-13",
       "name": "패션 디자이너",
       "summary": "(DEMO) 패션 디자이너 직무 테스트용 요약입니다.",
       "description": "(DEMO placeholder) 실제 공식 데이터가 아닙니다. 디자인 분야에서 활동하는 패션 디자이너 직무에 대한 테스트용 설명입니다.",
@@ -1897,7 +1844,7 @@
     },
     {
       "categorySlug": "cat-2",
-      "slug": "occ-16",
+      "slug": "occ-14",
       "name": "영상 디자이너",
       "summary": "(DEMO) 영상 디자이너 직무 테스트용 요약입니다.",
       "description": "(DEMO placeholder) 실제 공식 데이터가 아닙니다. 디자인 분야에서 활동하는 영상 디자이너 직무에 대한 테스트용 설명입니다.",
@@ -1926,7 +1873,7 @@
     },
     {
       "categorySlug": "cat-2",
-      "slug": "occ-17",
+      "slug": "occ-15",
       "name": "브랜드 디자이너",
       "summary": "(DEMO) 브랜드 디자이너 직무 테스트용 요약입니다.",
       "description": "(DEMO placeholder) 실제 공식 데이터가 아닙니다. 디자인 분야에서 활동하는 브랜드 디자이너 직무에 대한 테스트용 설명입니다.",
@@ -1950,7 +1897,7 @@
     },
     {
       "categorySlug": "cat-2",
-      "slug": "occ-18",
+      "slug": "occ-16",
       "name": "인테리어 디자이너",
       "summary": "(DEMO) 인테리어 디자이너 직무 테스트용 요약입니다.",
       "description": "(DEMO placeholder) 실제 공식 데이터가 아닙니다. 디자인 분야에서 활동하는 인테리어 디자이너 직무에 대한 테스트용 설명입니다.",
@@ -1975,36 +1922,7 @@
     },
     {
       "categorySlug": "cat-3",
-      "slug": "occ-19",
-      "name": "데이터 분석가",
-      "summary": "(DEMO) 데이터 분석가 직무 테스트용 요약입니다.",
-      "description": "(DEMO placeholder) 실제 공식 데이터가 아닙니다. 데이터 분야에서 활동하는 데이터 분석가 직무에 대한 테스트용 설명입니다.",
-      "skills": [
-        {
-          "slug": "sql",
-          "sourceExternalId": "BULK-DUMMY-source-1"
-        },
-        {
-          "slug": "skill-52",
-          "sourceExternalId": "BULK-DUMMY-source-1"
-        }
-      ],
-      "qualifications": [
-        {
-          "slug": "qual-10",
-          "sourceExternalId": "BULK-DUMMY-source-1"
-        }
-      ],
-      "majors": [
-        {
-          "slug": "major-19",
-          "sourceExternalId": "BULK-DUMMY-source-1"
-        }
-      ]
-    },
-    {
-      "categorySlug": "cat-3",
-      "slug": "occ-20",
+      "slug": "occ-17",
       "name": "데이터 사이언티스트",
       "summary": "(DEMO) 데이터 사이언티스트 직무 테스트용 요약입니다.",
       "description": "(DEMO placeholder) 실제 공식 데이터가 아닙니다. 데이터 분야에서 활동하는 데이터 사이언티스트 직무에 대한 테스트용 설명입니다.",
@@ -2033,7 +1951,7 @@
     },
     {
       "categorySlug": "cat-3",
-      "slug": "occ-21",
+      "slug": "occ-18",
       "name": "비즈니스 애널리스트",
       "summary": "(DEMO) 비즈니스 애널리스트 직무 테스트용 요약입니다.",
       "description": "(DEMO placeholder) 실제 공식 데이터가 아닙니다. 데이터 분야에서 활동하는 비즈니스 애널리스트 직무에 대한 테스트용 설명입니다.",
@@ -2062,7 +1980,7 @@
     },
     {
       "categorySlug": "cat-3",
-      "slug": "occ-22",
+      "slug": "occ-19",
       "name": "통계 분석가",
       "summary": "(DEMO) 통계 분석가 직무 테스트용 요약입니다.",
       "description": "(DEMO placeholder) 실제 공식 데이터가 아닙니다. 데이터 분야에서 활동하는 통계 분석가 직무에 대한 테스트용 설명입니다.",
@@ -2091,7 +2009,7 @@
     },
     {
       "categorySlug": "cat-4",
-      "slug": "occ-23",
+      "slug": "occ-20",
       "name": "경영 컨설턴트",
       "summary": "(DEMO) 경영 컨설턴트 직무 테스트용 요약입니다.",
       "description": "(DEMO placeholder) 실제 공식 데이터가 아닙니다. 경영·비즈니스 분야에서 활동하는 경영 컨설턴트 직무에 대한 테스트용 설명입니다.",
@@ -2120,7 +2038,7 @@
     },
     {
       "categorySlug": "cat-4",
-      "slug": "occ-24",
+      "slug": "occ-21",
       "name": "회계사",
       "summary": "(DEMO) 회계사 직무 테스트용 요약입니다.",
       "description": "(DEMO placeholder) 실제 공식 데이터가 아닙니다. 경영·비즈니스 분야에서 활동하는 회계사 직무에 대한 테스트용 설명입니다.",
@@ -2149,7 +2067,7 @@
     },
     {
       "categorySlug": "cat-4",
-      "slug": "occ-25",
+      "slug": "occ-22",
       "name": "세무사",
       "summary": "(DEMO) 세무사 직무 테스트용 요약입니다.",
       "description": "(DEMO placeholder) 실제 공식 데이터가 아닙니다. 경영·비즈니스 분야에서 활동하는 세무사 직무에 대한 테스트용 설명입니다.",
@@ -2174,7 +2092,7 @@
     },
     {
       "categorySlug": "cat-4",
-      "slug": "occ-26",
+      "slug": "occ-23",
       "name": "인사담당자",
       "summary": "(DEMO) 인사담당자 직무 테스트용 요약입니다.",
       "description": "(DEMO placeholder) 실제 공식 데이터가 아닙니다. 경영·비즈니스 분야에서 활동하는 인사담당자 직무에 대한 테스트용 설명입니다.",
@@ -2198,7 +2116,7 @@
     },
     {
       "categorySlug": "cat-4",
-      "slug": "occ-27",
+      "slug": "occ-24",
       "name": "재무 분석가",
       "summary": "(DEMO) 재무 분석가 직무 테스트용 요약입니다.",
       "description": "(DEMO placeholder) 실제 공식 데이터가 아닙니다. 경영·비즈니스 분야에서 활동하는 재무 분석가 직무에 대한 테스트용 설명입니다.",
@@ -2227,7 +2145,7 @@
     },
     {
       "categorySlug": "cat-4",
-      "slug": "occ-28",
+      "slug": "occ-25",
       "name": "무역 사무원",
       "summary": "(DEMO) 무역 사무원 직무 테스트용 요약입니다.",
       "description": "(DEMO placeholder) 실제 공식 데이터가 아닙니다. 경영·비즈니스 분야에서 활동하는 무역 사무원 직무에 대한 테스트용 설명입니다.",
@@ -2247,7 +2165,7 @@
     },
     {
       "categorySlug": "cat-4",
-      "slug": "occ-29",
+      "slug": "occ-26",
       "name": "물류 관리자",
       "summary": "(DEMO) 물류 관리자 직무 테스트용 요약입니다.",
       "description": "(DEMO placeholder) 실제 공식 데이터가 아닙니다. 경영·비즈니스 분야에서 활동하는 물류 관리자 직무에 대한 테스트용 설명입니다.",
@@ -2276,7 +2194,7 @@
     },
     {
       "categorySlug": "cat-4",
-      "slug": "occ-30",
+      "slug": "occ-27",
       "name": "공인노무사",
       "summary": "(DEMO) 공인노무사 직무 테스트용 요약입니다.",
       "description": "(DEMO placeholder) 실제 공식 데이터가 아닙니다. 경영·비즈니스 분야에서 활동하는 공인노무사 직무에 대한 테스트용 설명입니다.",
@@ -2301,7 +2219,7 @@
     },
     {
       "categorySlug": "cat-5",
-      "slug": "occ-31",
+      "slug": "occ-28",
       "name": "마케팅 매니저",
       "summary": "(DEMO) 마케팅 매니저 직무 테스트용 요약입니다.",
       "description": "(DEMO placeholder) 실제 공식 데이터가 아닙니다. 마케팅·미디어 분야에서 활동하는 마케팅 매니저 직무에 대한 테스트용 설명입니다.",
@@ -2325,7 +2243,7 @@
     },
     {
       "categorySlug": "cat-5",
-      "slug": "occ-32",
+      "slug": "occ-29",
       "name": "콘텐츠 마케터",
       "summary": "(DEMO) 콘텐츠 마케터 직무 테스트용 요약입니다.",
       "description": "(DEMO placeholder) 실제 공식 데이터가 아닙니다. 마케팅·미디어 분야에서 활동하는 콘텐츠 마케터 직무에 대한 테스트용 설명입니다.",
@@ -2349,7 +2267,7 @@
     },
     {
       "categorySlug": "cat-5",
-      "slug": "occ-33",
+      "slug": "occ-30",
       "name": "브랜드 매니저",
       "summary": "(DEMO) 브랜드 매니저 직무 테스트용 요약입니다.",
       "description": "(DEMO placeholder) 실제 공식 데이터가 아닙니다. 마케팅·미디어 분야에서 활동하는 브랜드 매니저 직무에 대한 테스트용 설명입니다.",
@@ -2373,7 +2291,7 @@
     },
     {
       "categorySlug": "cat-5",
-      "slug": "occ-34",
+      "slug": "occ-31",
       "name": "광고 기획자",
       "summary": "(DEMO) 광고 기획자 직무 테스트용 요약입니다.",
       "description": "(DEMO placeholder) 실제 공식 데이터가 아닙니다. 마케팅·미디어 분야에서 활동하는 광고 기획자 직무에 대한 테스트용 설명입니다.",
@@ -2393,7 +2311,7 @@
     },
     {
       "categorySlug": "cat-5",
-      "slug": "occ-35",
+      "slug": "occ-32",
       "name": "PR 담당자",
       "summary": "(DEMO) PR 담당자 직무 테스트용 요약입니다.",
       "description": "(DEMO placeholder) 실제 공식 데이터가 아닙니다. 마케팅·미디어 분야에서 활동하는 PR 담당자 직무에 대한 테스트용 설명입니다.",
@@ -2417,7 +2335,7 @@
     },
     {
       "categorySlug": "cat-5",
-      "slug": "occ-36",
+      "slug": "occ-33",
       "name": "방송 PD",
       "summary": "(DEMO) 방송 PD 직무 테스트용 요약입니다.",
       "description": "(DEMO placeholder) 실제 공식 데이터가 아닙니다. 마케팅·미디어 분야에서 활동하는 방송 PD 직무에 대한 테스트용 설명입니다.",
@@ -2441,7 +2359,7 @@
     },
     {
       "categorySlug": "cat-5",
-      "slug": "occ-37",
+      "slug": "occ-34",
       "name": "기자",
       "summary": "(DEMO) 기자 직무 테스트용 요약입니다.",
       "description": "(DEMO placeholder) 실제 공식 데이터가 아닙니다. 마케팅·미디어 분야에서 활동하는 기자 직무에 대한 테스트용 설명입니다.",
@@ -2461,7 +2379,7 @@
     },
     {
       "categorySlug": "cat-5",
-      "slug": "occ-38",
+      "slug": "occ-35",
       "name": "영상 편집자",
       "summary": "(DEMO) 영상 편집자 직무 테스트용 요약입니다.",
       "description": "(DEMO placeholder) 실제 공식 데이터가 아닙니다. 마케팅·미디어 분야에서 활동하는 영상 편집자 직무에 대한 테스트용 설명입니다.",
@@ -2490,7 +2408,7 @@
     },
     {
       "categorySlug": "cat-6",
-      "slug": "occ-39",
+      "slug": "occ-36",
       "name": "초등학교 교사",
       "summary": "(DEMO) 초등학교 교사 직무 테스트용 요약입니다.",
       "description": "(DEMO placeholder) 실제 공식 데이터가 아닙니다. 교육 분야에서 활동하는 초등학교 교사 직무에 대한 테스트용 설명입니다.",
@@ -2514,7 +2432,7 @@
     },
     {
       "categorySlug": "cat-6",
-      "slug": "occ-40",
+      "slug": "occ-37",
       "name": "중등 영어교사",
       "summary": "(DEMO) 중등 영어교사 직무 테스트용 요약입니다.",
       "description": "(DEMO placeholder) 실제 공식 데이터가 아닙니다. 교육 분야에서 활동하는 중등 영어교사 직무에 대한 테스트용 설명입니다.",
@@ -2538,7 +2456,7 @@
     },
     {
       "categorySlug": "cat-6",
-      "slug": "occ-41",
+      "slug": "occ-38",
       "name": "유치원 교사",
       "summary": "(DEMO) 유치원 교사 직무 테스트용 요약입니다.",
       "description": "(DEMO placeholder) 실제 공식 데이터가 아닙니다. 교육 분야에서 활동하는 유치원 교사 직무에 대한 테스트용 설명입니다.",
@@ -2563,7 +2481,7 @@
     },
     {
       "categorySlug": "cat-6",
-      "slug": "occ-42",
+      "slug": "occ-39",
       "name": "특수교사",
       "summary": "(DEMO) 특수교사 직무 테스트용 요약입니다.",
       "description": "(DEMO placeholder) 실제 공식 데이터가 아닙니다. 교육 분야에서 활동하는 특수교사 직무에 대한 테스트용 설명입니다.",
@@ -2588,7 +2506,7 @@
     },
     {
       "categorySlug": "cat-6",
-      "slug": "occ-43",
+      "slug": "occ-40",
       "name": "직업상담사",
       "summary": "(DEMO) 직업상담사 직무 테스트용 요약입니다.",
       "description": "(DEMO placeholder) 실제 공식 데이터가 아닙니다. 교육 분야에서 활동하는 직업상담사 직무에 대한 테스트용 설명입니다.",
@@ -2608,7 +2526,7 @@
     },
     {
       "categorySlug": "cat-6",
-      "slug": "occ-44",
+      "slug": "occ-41",
       "name": "입시 컨설턴트",
       "summary": "(DEMO) 입시 컨설턴트 직무 테스트용 요약입니다.",
       "description": "(DEMO placeholder) 실제 공식 데이터가 아닙니다. 교육 분야에서 활동하는 입시 컨설턴트 직무에 대한 테스트용 설명입니다.",
@@ -2628,7 +2546,7 @@
     },
     {
       "categorySlug": "cat-6",
-      "slug": "occ-45",
+      "slug": "occ-42",
       "name": "평생교육사",
       "summary": "(DEMO) 평생교육사 직무 테스트용 요약입니다.",
       "description": "(DEMO placeholder) 실제 공식 데이터가 아닙니다. 교육 분야에서 활동하는 평생교육사 직무에 대한 테스트용 설명입니다.",
@@ -2648,7 +2566,7 @@
     },
     {
       "categorySlug": "cat-7",
-      "slug": "occ-46",
+      "slug": "occ-43",
       "name": "간호사",
       "summary": "(DEMO) 간호사 직무 테스트용 요약입니다.",
       "description": "(DEMO placeholder) 실제 공식 데이터가 아닙니다. 의료·보건 분야에서 활동하는 간호사 직무에 대한 테스트용 설명입니다.",
@@ -2672,7 +2590,7 @@
     },
     {
       "categorySlug": "cat-7",
-      "slug": "occ-47",
+      "slug": "occ-44",
       "name": "물리치료사",
       "summary": "(DEMO) 물리치료사 직무 테스트용 요약입니다.",
       "description": "(DEMO placeholder) 실제 공식 데이터가 아닙니다. 의료·보건 분야에서 활동하는 물리치료사 직무에 대한 테스트용 설명입니다.",
@@ -2697,7 +2615,7 @@
     },
     {
       "categorySlug": "cat-7",
-      "slug": "occ-48",
+      "slug": "occ-45",
       "name": "임상병리사",
       "summary": "(DEMO) 임상병리사 직무 테스트용 요약입니다.",
       "description": "(DEMO placeholder) 실제 공식 데이터가 아닙니다. 의료·보건 분야에서 활동하는 임상병리사 직무에 대한 테스트용 설명입니다.",
@@ -2722,7 +2640,7 @@
     },
     {
       "categorySlug": "cat-7",
-      "slug": "occ-49",
+      "slug": "occ-46",
       "name": "방사선사",
       "summary": "(DEMO) 방사선사 직무 테스트용 요약입니다.",
       "description": "(DEMO placeholder) 실제 공식 데이터가 아닙니다. 의료·보건 분야에서 활동하는 방사선사 직무에 대한 테스트용 설명입니다.",
@@ -2747,7 +2665,7 @@
     },
     {
       "categorySlug": "cat-7",
-      "slug": "occ-50",
+      "slug": "occ-47",
       "name": "약사",
       "summary": "(DEMO) 약사 직무 테스트용 요약입니다.",
       "description": "(DEMO placeholder) 실제 공식 데이터가 아닙니다. 의료·보건 분야에서 활동하는 약사 직무에 대한 테스트용 설명입니다.",
@@ -2767,7 +2685,7 @@
     },
     {
       "categorySlug": "cat-7",
-      "slug": "occ-51",
+      "slug": "occ-48",
       "name": "영양사",
       "summary": "(DEMO) 영양사 직무 테스트용 요약입니다.",
       "description": "(DEMO placeholder) 실제 공식 데이터가 아닙니다. 의료·보건 분야에서 활동하는 영양사 직무에 대한 테스트용 설명입니다.",
@@ -2782,7 +2700,7 @@
     },
     {
       "categorySlug": "cat-7",
-      "slug": "occ-52",
+      "slug": "occ-49",
       "name": "사회복지사",
       "summary": "(DEMO) 사회복지사 직무 테스트용 요약입니다.",
       "description": "(DEMO placeholder) 실제 공식 데이터가 아닙니다. 의료·보건 분야에서 활동하는 사회복지사 직무에 대한 테스트용 설명입니다.",
@@ -2807,7 +2725,7 @@
     },
     {
       "categorySlug": "cat-7",
-      "slug": "occ-53",
+      "slug": "occ-50",
       "name": "임상심리사",
       "summary": "(DEMO) 임상심리사 직무 테스트용 요약입니다.",
       "description": "(DEMO placeholder) 실제 공식 데이터가 아닙니다. 의료·보건 분야에서 활동하는 임상심리사 직무에 대한 테스트용 설명입니다.",
@@ -2827,7 +2745,7 @@
     },
     {
       "categorySlug": "cat-7",
-      "slug": "occ-54",
+      "slug": "occ-51",
       "name": "응급구조사",
       "summary": "(DEMO) 응급구조사 직무 테스트용 요약입니다.",
       "description": "(DEMO placeholder) 실제 공식 데이터가 아닙니다. 의료·보건 분야에서 활동하는 응급구조사 직무에 대한 테스트용 설명입니다.",
@@ -2847,7 +2765,7 @@
     },
     {
       "categorySlug": "cat-8",
-      "slug": "occ-55",
+      "slug": "occ-52",
       "name": "기계설계 엔지니어",
       "summary": "(DEMO) 기계설계 엔지니어 직무 테스트용 요약입니다.",
       "description": "(DEMO placeholder) 실제 공식 데이터가 아닙니다. 제조·엔지니어링 분야에서 활동하는 기계설계 엔지니어 직무에 대한 테스트용 설명입니다.",
@@ -2872,7 +2790,7 @@
     },
     {
       "categorySlug": "cat-8",
-      "slug": "occ-56",
+      "slug": "occ-53",
       "name": "전기 엔지니어",
       "summary": "(DEMO) 전기 엔지니어 직무 테스트용 요약입니다.",
       "description": "(DEMO placeholder) 실제 공식 데이터가 아닙니다. 제조·엔지니어링 분야에서 활동하는 전기 엔지니어 직무에 대한 테스트용 설명입니다.",
@@ -2901,7 +2819,7 @@
     },
     {
       "categorySlug": "cat-8",
-      "slug": "occ-57",
+      "slug": "occ-54",
       "name": "품질관리 엔지니어",
       "summary": "(DEMO) 품질관리 엔지니어 직무 테스트용 요약입니다.",
       "description": "(DEMO placeholder) 실제 공식 데이터가 아닙니다. 제조·엔지니어링 분야에서 활동하는 품질관리 엔지니어 직무에 대한 테스트용 설명입니다.",
@@ -2926,7 +2844,7 @@
     },
     {
       "categorySlug": "cat-8",
-      "slug": "occ-58",
+      "slug": "occ-55",
       "name": "생산관리자",
       "summary": "(DEMO) 생산관리자 직무 테스트용 요약입니다.",
       "description": "(DEMO placeholder) 실제 공식 데이터가 아닙니다. 제조·엔지니어링 분야에서 활동하는 생산관리자 직무에 대한 테스트용 설명입니다.",
@@ -2946,7 +2864,7 @@
     },
     {
       "categorySlug": "cat-8",
-      "slug": "occ-59",
+      "slug": "occ-56",
       "name": "자동차 정비사",
       "summary": "(DEMO) 자동차 정비사 직무 테스트용 요약입니다.",
       "description": "(DEMO placeholder) 실제 공식 데이터가 아닙니다. 제조·엔지니어링 분야에서 활동하는 자동차 정비사 직무에 대한 테스트용 설명입니다.",
@@ -2971,7 +2889,7 @@
     },
     {
       "categorySlug": "cat-8",
-      "slug": "occ-60",
+      "slug": "occ-57",
       "name": "용접기술자",
       "summary": "(DEMO) 용접기술자 직무 테스트용 요약입니다.",
       "description": "(DEMO placeholder) 실제 공식 데이터가 아닙니다. 제조·엔지니어링 분야에서 활동하는 용접기술자 직무에 대한 테스트용 설명입니다.",
@@ -2996,7 +2914,7 @@
     },
     {
       "categorySlug": "cat-8",
-      "slug": "occ-61",
+      "slug": "occ-58",
       "name": "화학 엔지니어",
       "summary": "(DEMO) 화학 엔지니어 직무 테스트용 요약입니다.",
       "description": "(DEMO placeholder) 실제 공식 데이터가 아닙니다. 제조·엔지니어링 분야에서 활동하는 화학 엔지니어 직무에 대한 테스트용 설명입니다.",
@@ -3021,7 +2939,7 @@
     },
     {
       "categorySlug": "cat-8",
-      "slug": "occ-62",
+      "slug": "occ-59",
       "name": "로봇공학 엔지니어",
       "summary": "(DEMO) 로봇공학 엔지니어 직무 테스트용 요약입니다.",
       "description": "(DEMO placeholder) 실제 공식 데이터가 아닙니다. 제조·엔지니어링 분야에서 활동하는 로봇공학 엔지니어 직무에 대한 테스트용 설명입니다.",
@@ -3045,7 +2963,7 @@
     },
     {
       "categorySlug": "cat-8",
-      "slug": "occ-63",
+      "slug": "occ-60",
       "name": "항공정비사",
       "summary": "(DEMO) 항공정비사 직무 테스트용 요약입니다.",
       "description": "(DEMO placeholder) 실제 공식 데이터가 아닙니다. 제조·엔지니어링 분야에서 활동하는 항공정비사 직무에 대한 테스트용 설명입니다.",
@@ -3065,7 +2983,7 @@
     },
     {
       "categorySlug": "cat-8",
-      "slug": "occ-64",
+      "slug": "occ-61",
       "name": "조선 설계 엔지니어",
       "summary": "(DEMO) 조선 설계 엔지니어 직무 테스트용 요약입니다.",
       "description": "(DEMO placeholder) 실제 공식 데이터가 아닙니다. 제조·엔지니어링 분야에서 활동하는 조선 설계 엔지니어 직무에 대한 테스트용 설명입니다.",
@@ -3085,7 +3003,7 @@
     },
     {
       "categorySlug": "cat-9",
-      "slug": "occ-65",
+      "slug": "occ-62",
       "name": "건축설계사",
       "summary": "(DEMO) 건축설계사 직무 테스트용 요약입니다.",
       "description": "(DEMO placeholder) 실제 공식 데이터가 아닙니다. 건설·환경 분야에서 활동하는 건축설계사 직무에 대한 테스트용 설명입니다.",
@@ -3110,7 +3028,7 @@
     },
     {
       "categorySlug": "cat-9",
-      "slug": "occ-66",
+      "slug": "occ-63",
       "name": "토목 엔지니어",
       "summary": "(DEMO) 토목 엔지니어 직무 테스트용 요약입니다.",
       "description": "(DEMO placeholder) 실제 공식 데이터가 아닙니다. 건설·환경 분야에서 활동하는 토목 엔지니어 직무에 대한 테스트용 설명입니다.",
@@ -3135,7 +3053,7 @@
     },
     {
       "categorySlug": "cat-9",
-      "slug": "occ-67",
+      "slug": "occ-64",
       "name": "환경 엔지니어",
       "summary": "(DEMO) 환경 엔지니어 직무 테스트용 요약입니다.",
       "description": "(DEMO placeholder) 실제 공식 데이터가 아닙니다. 건설·환경 분야에서 활동하는 환경 엔지니어 직무에 대한 테스트용 설명입니다.",
@@ -3160,7 +3078,7 @@
     },
     {
       "categorySlug": "cat-9",
-      "slug": "occ-68",
+      "slug": "occ-65",
       "name": "조경 설계사",
       "summary": "(DEMO) 조경 설계사 직무 테스트용 요약입니다.",
       "description": "(DEMO placeholder) 실제 공식 데이터가 아닙니다. 건설·환경 분야에서 활동하는 조경 설계사 직무에 대한 테스트용 설명입니다.",
@@ -3185,7 +3103,7 @@
     },
     {
       "categorySlug": "cat-9",
-      "slug": "occ-69",
+      "slug": "occ-66",
       "name": "소방 안전관리자",
       "summary": "(DEMO) 소방 안전관리자 직무 테스트용 요약입니다.",
       "description": "(DEMO placeholder) 실제 공식 데이터가 아닙니다. 건설·환경 분야에서 활동하는 소방 안전관리자 직무에 대한 테스트용 설명입니다.",
@@ -3210,7 +3128,7 @@
     },
     {
       "categorySlug": "cat-9",
-      "slug": "occ-70",
+      "slug": "occ-67",
       "name": "신재생에너지 엔지니어",
       "summary": "(DEMO) 신재생에너지 엔지니어 직무 테스트용 요약입니다.",
       "description": "(DEMO placeholder) 실제 공식 데이터가 아닙니다. 건설·환경 분야에서 활동하는 신재생에너지 엔지니어 직무에 대한 테스트용 설명입니다.",
@@ -3235,7 +3153,7 @@
     },
     {
       "categorySlug": "cat-9",
-      "slug": "occ-71",
+      "slug": "occ-68",
       "name": "도시계획가",
       "summary": "(DEMO) 도시계획가 직무 테스트용 요약입니다.",
       "description": "(DEMO placeholder) 실제 공식 데이터가 아닙니다. 건설·환경 분야에서 활동하는 도시계획가 직무에 대한 테스트용 설명입니다.",
@@ -3255,7 +3173,7 @@
     },
     {
       "categorySlug": "cat-9",
-      "slug": "occ-72",
+      "slug": "occ-69",
       "name": "조경관리사",
       "summary": "(DEMO) 조경관리사 직무 테스트용 요약입니다.",
       "description": "(DEMO placeholder) 실제 공식 데이터가 아닙니다. 건설·환경 분야에서 활동하는 조경관리사 직무에 대한 테스트용 설명입니다.",
@@ -3275,7 +3193,7 @@
     },
     {
       "categorySlug": "cat-10",
-      "slug": "occ-73",
+      "slug": "occ-70",
       "name": "음악가",
       "summary": "(DEMO) 음악가 직무 테스트용 요약입니다.",
       "description": "(DEMO placeholder) 실제 공식 데이터가 아닙니다. 문화·예술 분야에서 활동하는 음악가 직무에 대한 테스트용 설명입니다.",
@@ -3295,7 +3213,7 @@
     },
     {
       "categorySlug": "cat-10",
-      "slug": "occ-74",
+      "slug": "occ-71",
       "name": "작곡가",
       "summary": "(DEMO) 작곡가 직무 테스트용 요약입니다.",
       "description": "(DEMO placeholder) 실제 공식 데이터가 아닙니다. 문화·예술 분야에서 활동하는 작곡가 직무에 대한 테스트용 설명입니다.",
@@ -3315,7 +3233,7 @@
     },
     {
       "categorySlug": "cat-10",
-      "slug": "occ-75",
+      "slug": "occ-72",
       "name": "배우",
       "summary": "(DEMO) 배우 직무 테스트용 요약입니다.",
       "description": "(DEMO placeholder) 실제 공식 데이터가 아닙니다. 문화·예술 분야에서 활동하는 배우 직무에 대한 테스트용 설명입니다.",
@@ -3335,7 +3253,7 @@
     },
     {
       "categorySlug": "cat-10",
-      "slug": "occ-76",
+      "slug": "occ-73",
       "name": "무용가",
       "summary": "(DEMO) 무용가 직무 테스트용 요약입니다.",
       "description": "(DEMO placeholder) 실제 공식 데이터가 아닙니다. 문화·예술 분야에서 활동하는 무용가 직무에 대한 테스트용 설명입니다.",
@@ -3355,7 +3273,7 @@
     },
     {
       "categorySlug": "cat-10",
-      "slug": "occ-77",
+      "slug": "occ-74",
       "name": "사진작가",
       "summary": "(DEMO) 사진작가 직무 테스트용 요약입니다.",
       "description": "(DEMO placeholder) 실제 공식 데이터가 아닙니다. 문화·예술 분야에서 활동하는 사진작가 직무에 대한 테스트용 설명입니다.",
@@ -3375,7 +3293,7 @@
     },
     {
       "categorySlug": "cat-10",
-      "slug": "occ-78",
+      "slug": "occ-75",
       "name": "큐레이터",
       "summary": "(DEMO) 큐레이터 직무 테스트용 요약입니다.",
       "description": "(DEMO placeholder) 실제 공식 데이터가 아닙니다. 문화·예술 분야에서 활동하는 큐레이터 직무에 대한 테스트용 설명입니다.",
@@ -3395,7 +3313,7 @@
     },
     {
       "categorySlug": "cat-10",
-      "slug": "occ-79",
+      "slug": "occ-76",
       "name": "방송작가",
       "summary": "(DEMO) 방송작가 직무 테스트용 요약입니다.",
       "description": "(DEMO placeholder) 실제 공식 데이터가 아닙니다. 문화·예술 분야에서 활동하는 방송작가 직무에 대한 테스트용 설명입니다.",
@@ -3415,7 +3333,7 @@
     },
     {
       "categorySlug": "cat-10",
-      "slug": "occ-80",
+      "slug": "occ-77",
       "name": "공연 기획자",
       "summary": "(DEMO) 공연 기획자 직무 테스트용 요약입니다.",
       "description": "(DEMO placeholder) 실제 공식 데이터가 아닙니다. 문화·예술 분야에서 활동하는 공연 기획자 직무에 대한 테스트용 설명입니다.",
@@ -3439,7 +3357,7 @@
     },
     {
       "categorySlug": "cat-10",
-      "slug": "occ-81",
+      "slug": "occ-78",
       "name": "제과제빵사",
       "summary": "(DEMO) 제과제빵사 직무 테스트용 요약입니다.",
       "description": "(DEMO placeholder) 실제 공식 데이터가 아닙니다. 문화·예술 분야에서 활동하는 제과제빵사 직무에 대한 테스트용 설명입니다.",
@@ -3464,7 +3382,7 @@
     },
     {
       "categorySlug": "cat-10",
-      "slug": "occ-82",
+      "slug": "occ-79",
       "name": "바리스타",
       "summary": "(DEMO) 바리스타 직무 테스트용 요약입니다.",
       "description": "(DEMO placeholder) 실제 공식 데이터가 아닙니다. 문화·예술 분야에서 활동하는 바리스타 직무에 대한 테스트용 설명입니다.",
@@ -3489,7 +3407,7 @@
     },
     {
       "categorySlug": "cat-10",
-      "slug": "occ-83",
+      "slug": "occ-80",
       "name": "조리사",
       "summary": "(DEMO) 조리사 직무 테스트용 요약입니다.",
       "description": "(DEMO placeholder) 실제 공식 데이터가 아닙니다. 문화·예술 분야에서 활동하는 조리사 직무에 대한 테스트용 설명입니다.",
@@ -3514,7 +3432,7 @@
     },
     {
       "categorySlug": "cat-10",
-      "slug": "occ-84",
+      "slug": "occ-81",
       "name": "호텔리어",
       "summary": "(DEMO) 호텔리어 직무 테스트용 요약입니다.",
       "description": "(DEMO placeholder) 실제 공식 데이터가 아닙니다. 문화·예술 분야에서 활동하는 호텔리어 직무에 대한 테스트용 설명입니다.",
@@ -3534,7 +3452,7 @@
     },
     {
       "categorySlug": "cat-10",
-      "slug": "occ-85",
+      "slug": "occ-82",
       "name": "여행 플래너",
       "summary": "(DEMO) 여행 플래너 직무 테스트용 요약입니다.",
       "description": "(DEMO placeholder) 실제 공식 데이터가 아닙니다. 문화·예술 분야에서 활동하는 여행 플래너 직무에 대한 테스트용 설명입니다.",
@@ -3559,7 +3477,7 @@
     },
     {
       "categorySlug": "cat-10",
-      "slug": "occ-86",
+      "slug": "occ-83",
       "name": "항공 승무원",
       "summary": "(DEMO) 항공 승무원 직무 테스트용 요약입니다.",
       "description": "(DEMO placeholder) 실제 공식 데이터가 아닙니다. 문화·예술 분야에서 활동하는 항공 승무원 직무에 대한 테스트용 설명입니다.",
@@ -3583,7 +3501,7 @@
     },
     {
       "categorySlug": "cat-10",
-      "slug": "occ-87",
+      "slug": "occ-84",
       "name": "플로리스트",
       "summary": "(DEMO) 플로리스트 직무 테스트용 요약입니다.",
       "description": "(DEMO placeholder) 실제 공식 데이터가 아닙니다. 문화·예술 분야에서 활동하는 플로리스트 직무에 대한 테스트용 설명입니다.",
@@ -3598,7 +3516,7 @@
     },
     {
       "categorySlug": "cat-10",
-      "slug": "occ-88",
+      "slug": "occ-85",
       "name": "헤어디자이너",
       "summary": "(DEMO) 헤어디자이너 직무 테스트용 요약입니다.",
       "description": "(DEMO placeholder) 실제 공식 데이터가 아닙니다. 문화·예술 분야에서 활동하는 헤어디자이너 직무에 대한 테스트용 설명입니다.",
@@ -3618,7 +3536,7 @@
     },
     {
       "categorySlug": "cat-10",
-      "slug": "occ-89",
+      "slug": "occ-86",
       "name": "메이크업 아티스트",
       "summary": "(DEMO) 메이크업 아티스트 직무 테스트용 요약입니다.",
       "description": "(DEMO placeholder) 실제 공식 데이터가 아닙니다. 문화·예술 분야에서 활동하는 메이크업 아티스트 직무에 대한 테스트용 설명입니다.",
@@ -3638,7 +3556,7 @@
     },
     {
       "categorySlug": "cat-10",
-      "slug": "occ-90",
+      "slug": "occ-87",
       "name": "네일 아티스트",
       "summary": "(DEMO) 네일 아티스트 직무 테스트용 요약입니다.",
       "description": "(DEMO placeholder) 실제 공식 데이터가 아닙니다. 문화·예술 분야에서 활동하는 네일 아티스트 직무에 대한 테스트용 설명입니다.",
@@ -3658,7 +3576,7 @@
     },
     {
       "categorySlug": "cat-1",
-      "slug": "occ-91",
+      "slug": "occ-88",
       "name": "게임 기획자",
       "summary": "(DEMO) 게임 기획자 직무 테스트용 요약입니다.",
       "description": "(DEMO placeholder) 실제 공식 데이터가 아닙니다. IT·개발 분야에서 활동하는 게임 기획자 직무에 대한 테스트용 설명입니다.",
@@ -3678,7 +3596,7 @@
     },
     {
       "categorySlug": "cat-1",
-      "slug": "occ-92",
+      "slug": "occ-89",
       "name": "게임 그래픽 디자이너",
       "summary": "(DEMO) 게임 그래픽 디자이너 직무 테스트용 요약입니다.",
       "description": "(DEMO placeholder) 실제 공식 데이터가 아닙니다. IT·개발 분야에서 활동하는 게임 그래픽 디자이너 직무에 대한 테스트용 설명입니다.",
@@ -3707,7 +3625,7 @@
     },
     {
       "categorySlug": "cat-1",
-      "slug": "occ-93",
+      "slug": "occ-90",
       "name": "웹퍼블리셔",
       "summary": "(DEMO) 웹퍼블리셔 직무 테스트용 요약입니다.",
       "description": "(DEMO placeholder) 실제 공식 데이터가 아닙니다. IT·개발 분야에서 활동하는 웹퍼블리셔 직무에 대한 테스트용 설명입니다.",
@@ -3736,7 +3654,7 @@
     },
     {
       "categorySlug": "cat-1",
-      "slug": "occ-94",
+      "slug": "occ-91",
       "name": "시스템 엔지니어",
       "summary": "(DEMO) 시스템 엔지니어 직무 테스트용 요약입니다.",
       "description": "(DEMO placeholder) 실제 공식 데이터가 아닙니다. IT·개발 분야에서 활동하는 시스템 엔지니어 직무에 대한 테스트용 설명입니다.",
@@ -3761,7 +3679,7 @@
     },
     {
       "categorySlug": "cat-1",
-      "slug": "occ-95",
+      "slug": "occ-92",
       "name": "네트워크 엔지니어",
       "summary": "(DEMO) 네트워크 엔지니어 직무 테스트용 요약입니다.",
       "description": "(DEMO placeholder) 실제 공식 데이터가 아닙니다. IT·개발 분야에서 활동하는 네트워크 엔지니어 직무에 대한 테스트용 설명입니다.",
@@ -3781,7 +3699,7 @@
     },
     {
       "categorySlug": "cat-1",
-      "slug": "occ-96",
+      "slug": "occ-93",
       "name": "IT 컨설턴트",
       "summary": "(DEMO) IT 컨설턴트 직무 테스트용 요약입니다.",
       "description": "(DEMO placeholder) 실제 공식 데이터가 아닙니다. IT·개발 분야에서 활동하는 IT 컨설턴트 직무에 대한 테스트용 설명입니다.",
@@ -3806,7 +3724,7 @@
     },
     {
       "categorySlug": "cat-1",
-      "slug": "occ-97",
+      "slug": "occ-94",
       "name": "프로덕트 매니저",
       "summary": "(DEMO) 프로덕트 매니저 직무 테스트용 요약입니다.",
       "description": "(DEMO placeholder) 실제 공식 데이터가 아닙니다. IT·개발 분야에서 활동하는 프로덕트 매니저 직무에 대한 테스트용 설명입니다.",
@@ -3830,7 +3748,7 @@
     },
     {
       "categorySlug": "cat-1",
-      "slug": "occ-98",
+      "slug": "occ-95",
       "name": "개발자 관계 매니저",
       "summary": "(DEMO) 개발자 관계 매니저 직무 테스트용 요약입니다.",
       "description": "(DEMO placeholder) 실제 공식 데이터가 아닙니다. IT·개발 분야에서 활동하는 개발자 관계 매니저 직무에 대한 테스트용 설명입니다.",
@@ -3850,7 +3768,7 @@
     },
     {
       "categorySlug": "cat-1",
-      "slug": "occ-99",
+      "slug": "occ-96",
       "name": "핀테크 개발자",
       "summary": "(DEMO) 핀테크 개발자 직무 테스트용 요약입니다.",
       "description": "(DEMO placeholder) 실제 공식 데이터가 아닙니다. IT·개발 분야에서 활동하는 핀테크 개발자 직무에 대한 테스트용 설명입니다.",
@@ -3879,7 +3797,7 @@
     },
     {
       "categorySlug": "cat-1",
-      "slug": "occ-100",
+      "slug": "occ-97",
       "name": "임베디드 소프트웨어 개발자",
       "summary": "(DEMO) 임베디드 소프트웨어 개발자 직무 테스트용 요약입니다.",
       "description": "(DEMO placeholder) 실제 공식 데이터가 아닙니다. IT·개발 분야에서 활동하는 임베디드 소프트웨어 개발자 직무에 대한 테스트용 설명입니다.",
@@ -3903,7 +3821,7 @@
     },
     {
       "categorySlug": "cat-4",
-      "slug": "occ-101",
+      "slug": "occ-98",
       "name": "공인중개사",
       "summary": "(DEMO) 공인중개사 직무 테스트용 요약입니다.",
       "description": "(DEMO placeholder) 실제 공식 데이터가 아닙니다. 경영·비즈니스 분야에서 활동하는 공인중개사 직무에 대한 테스트용 설명입니다.",
@@ -3928,7 +3846,7 @@
     },
     {
       "categorySlug": "cat-4",
-      "slug": "occ-102",
+      "slug": "occ-99",
       "name": "감정평가사",
       "summary": "(DEMO) 감정평가사 직무 테스트용 요약입니다.",
       "description": "(DEMO placeholder) 실제 공식 데이터가 아닙니다. 경영·비즈니스 분야에서 활동하는 감정평가사 직무에 대한 테스트용 설명입니다.",
@@ -3953,7 +3871,7 @@
     },
     {
       "categorySlug": "cat-4",
-      "slug": "occ-103",
+      "slug": "occ-100",
       "name": "보험계리사",
       "summary": "(DEMO) 보험계리사 직무 테스트용 요약입니다.",
       "description": "(DEMO placeholder) 실제 공식 데이터가 아닙니다. 경영·비즈니스 분야에서 활동하는 보험계리사 직무에 대한 테스트용 설명입니다.",
@@ -3978,7 +3896,7 @@
     },
     {
       "categorySlug": "cat-4",
-      "slug": "occ-104",
+      "slug": "occ-101",
       "name": "손해사정사",
       "summary": "(DEMO) 손해사정사 직무 테스트용 요약입니다.",
       "description": "(DEMO placeholder) 실제 공식 데이터가 아닙니다. 경영·비즈니스 분야에서 활동하는 손해사정사 직무에 대한 테스트용 설명입니다.",
@@ -4003,7 +3921,7 @@
     },
     {
       "categorySlug": "cat-6",
-      "slug": "occ-105",
+      "slug": "occ-102",
       "name": "사서",
       "summary": "(DEMO) 사서 직무 테스트용 요약입니다.",
       "description": "(DEMO placeholder) 실제 공식 데이터가 아닙니다. 교육 분야에서 활동하는 사서 직무에 대한 테스트용 설명입니다.",
@@ -4023,7 +3941,7 @@
     },
     {
       "categorySlug": "cat-10",
-      "slug": "occ-106",
+      "slug": "occ-103",
       "name": "통번역사",
       "summary": "(DEMO) 통번역사 직무 테스트용 요약입니다.",
       "description": "(DEMO placeholder) 실제 공식 데이터가 아닙니다. 문화·예술 분야에서 활동하는 통번역사 직무에 대한 테스트용 설명입니다.",
