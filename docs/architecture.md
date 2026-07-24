@@ -34,9 +34,14 @@ PostgreSQL is the primary database. Docker uses `pgvector/pgvector:0.8.1-pg17-bo
 
 ## External Providers
 
-Mail and AI are provider boundaries:
+AI is a provider boundary, called through the shared client in `common/ai/ai-client.js`
+(`AI_SERVICE_URL`/`AI_SERVICE_API_KEY`/`AI_SERVICE_TIMEOUT_MS`):
 
-- `auth/mail.provider.js` sends email only when SMTP is configured.
-- `conversations/ai.provider.js` and `roadmaps/roadmap.provider.js` are placeholders for a future AI service contract.
+- `conversations/ai.provider.js` calls `POST /api/chat` and maps each returned source into a
+  `Source` row (via `common/ai/resolve-source.js`) so chat citations always resolve to a real id.
+- `roadmaps/roadmap.provider.js` calls `POST /api/roadmap` and maps the returned timeline into
+  `RoadmapSemester`/`RoadmapItem` records, each linked to a resolved `Source`.
+- If the AI service is not configured, or the call fails, no fake official content or citations
+  are generated — the request fails with a clear error instead.
 
 No fake official public data, fake NCS content, or fake citations should be generated.

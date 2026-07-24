@@ -1,4 +1,82 @@
-# Minki Server
+# 민기 (Minki)
+
+> 모든 답변에 출처가 있습니다.
+
+국가직무능력표준(NCS)과 공공 데이터를 기반으로, 근거 있는 진로·전공 정보를 제공하는 학생 대상 커리어 플랫폼입니다. 직무 정보를 가짜로 지어내지 않고, 모든 AI 답변과 로드맵 항목에 출처를 남기는 것을 원칙으로 합니다.
+
+이 저장소(`minki-server`)는 민기의 **백엔드 API 서버**입니다. 프론트엔드는 [`minki-client`](https://github.com/Mingi-s-Big-Mac/minki-client), 진로 AI 서버는 [`minki-ai`](https://github.com/Mingi-s-Big-Mac/minki-ai) 저장소에 있습니다.
+
+## 데모
+
+|                    |                                      |
+| ------------------ | ------------------------------------ |
+| 웹 서비스          | https://minki-navy.vercel.app        |
+| API 서버           | https://minki-api.duckdns.org/api/v1 |
+| API 문서 (Swagger) | https://minki-api.duckdns.org/docs   |
+
+## 핵심 기능
+
+- **진로 검색** — 직무·기술·자격증·학과 기준으로 검증된 직무 정보를 검색하고, 직무 2~4개를 나란히 비교합니다.
+- **AI 질의응답** — 진로 관련 질문에 실제 직업 정보에 근거한 답변을 출처와 함께 받습니다.
+- **로드맵 생성** — 학년·전공·목표 직무를 입력하면 학기별 학습 과제·습득 기술·취득 자격증으로 구성된 로드맵을 생성합니다.
+- **관심 직업 저장 / 대시보드** — 관심 직업을 저장해두고, 홈 대시보드에서 최근 활동과 함께 모아봅니다.
+
+## 아키텍처
+
+```mermaid
+flowchart LR
+    subgraph Client
+        A["minki-client<br/>React + Vite (Vercel)"]
+    end
+    subgraph Server["minki-server (이 저장소)"]
+        B["Express 5 API"]
+        D[("PostgreSQL + pgvector")]
+    end
+    subgraph AI
+        C["minki-ai<br/>FastAPI 진로 AI 서버"]
+    end
+
+    A -- "HTTPS / Bearer JWT" --> B
+    B -- "Prisma" --> D
+    B -- "POST /api/chat, /api/roadmap<br/>(X-API-Key)" --> C
+```
+
+- 인증은 이메일/비밀번호 로그인 후 발급되는 단일 JWT(만료 시 재로그인, refresh 없음)를 `Authorization: Bearer` 헤더로 사용합니다.
+- 백엔드는 AI 서버가 돌려준 채팅 답변/로드맵 결과를 그대로 신뢰하지 않고, 인용된 출처마다 `Source` 레코드를 만들어 연결합니다 — 그래서 프론트에서 항상 "어디서 나온 정보인지" 추적할 수 있습니다.
+- AI 서버가 아직 준비되지 않았거나 응답에 실패하면 가짜 콘텐츠를 만들지 않고 명확한 에러(`AI_SERVICE_NOT_CONFIGURED`, `AI_RESPONSE_FAILED` 등)를 반환합니다.
+
+## 기술 스택
+
+| 영역               | 스택                                                                                   |
+| ------------------ | -------------------------------------------------------------------------------------- |
+| 프론트엔드         | React, TypeScript, Vite, Tailwind CSS, Vercel                                          |
+| 백엔드 (이 저장소) | Node.js 24, Express 5, Prisma, Zod, Pino, JavaScript ESM                               |
+| 데이터베이스       | PostgreSQL, pgvector (RAG 임베딩 대비)                                                 |
+| AI 서버            | FastAPI, 진로 AI 채팅/로드맵 생성 (NCS·워크넷 기반)                                    |
+| 인프라             | AWS EC2, Docker Compose, GitHub Actions CI/CD (자동 배포 + 헬스체크 실패 시 자동 롤백) |
+
+## 팀
+
+<!-- TODO: 팀원 이름 / 역할 채워주세요 -->
+
+| 이름 | 역할       |
+| ---- | ---------- |
+|      | 백엔드     |
+|      | 프론트엔드 |
+|      | AI         |
+|      | 인프라     |
+
+## 왜 "출처"를 강조하나요
+
+진로 정보는 잘못되면 학생의 실제 선택에 영향을 줍니다. 그래서 이 프로젝트는 다음을 원칙으로 합니다:
+
+- 실제 공식 데이터(NCS, 워크넷, 커리어넷 등) 없이 가짜 직업/자격증/통계를 만들지 않습니다.
+- AI가 인용한 모든 문장은 `Source` 테이블의 레코드로 연결되어, 응답에 항상 출처가 함께 내려갑니다.
+- 테스트/데모용 더미 데이터는 `(DEMO)` 표시를 붙이고 실제 공식 정보와 구분합니다 ([Data import](docs/data-import.md) 참고).
+
+---
+
+# 개발 문서 (minki-server)
 
 Express backend for a source-based major and career exploration service.
 
@@ -38,10 +116,11 @@ npm start
 
 `GET /occupations`, `/interests`, roadmaps, and AI Q&A all read from the
 `Occupation`/`Skill`/`Qualification`/`Major`/`Source` tables, which start
-empty. Load real data with:
+empty. Load data with:
 
 ```bash
-npm run seed:occupations -- data/occupations.template.json
+npm run seed:occupations -- data/occupations.dummy.json      # marked (DEMO), safe for testing
+npm run seed:occupations -- data/occupations.template.json   # fill with real data first
 ```
 
 Copy `data/occupations.template.json`, fill it with real occupation data from
@@ -139,19 +218,16 @@ Required:
 Required in production:
 
 - `ACCESS_TOKEN_SECRET`
-- `REFRESH_TOKEN_SECRET`
 
 Optional:
 
-- `ACCESS_TOKEN_EXPIRES_IN`
-- `REFRESH_TOKEN_EXPIRES_IN`
-- `EMAIL_VERIFICATION_EXPIRES_IN`
-- `SMTP_HOST`, `SMTP_PORT`, `SMTP_SECURE`, `SMTP_USER`, `SMTP_PASSWORD`, `SMTP_FROM` (set
-  `SMTP_HOST`, `SMTP_PORT`, and `SMTP_FROM` together; `SMTP_USER` and `SMTP_PASSWORD` are a pair)
-- `AI_SERVICE_URL`, `AI_SERVICE_API_KEY`, `AI_SERVICE_TIMEOUT_MS`
+- `ACCESS_TOKEN_EXPIRES_IN` (default `7d`; there is no refresh token, so this is the whole session lifetime)
+- `AI_SERVICE_URL`, `AI_SERVICE_API_KEY`, `AI_SERVICE_TIMEOUT_MS` (default `90000`ms — the AI service can take up to ~35s to generate a roadmap)
 - Docker-only: `APP_PORT`, `POSTGRES_USER`, `POSTGRES_PASSWORD`, `POSTGRES_DB`
 
-SMTP and AI service variables are optional. If they are not configured, the server still starts; related features return clear service errors instead of generating fake official data.
+The AI service variables are optional. If they are not configured, `/roadmaps` and `/conversations/:id/messages` still start, but return a clear `AI_SERVICE_NOT_CONFIGURED` error instead of generating fake official data.
+
+`REFRESH_TOKEN_SECRET`, `REFRESH_TOKEN_EXPIRES_IN`, `EMAIL_VERIFICATION_EXPIRES_IN`, and `SMTP_*` are still accepted for backward compatibility but are no longer used — email verification and refresh token rotation were removed to fit the hackathon timeline (see `docs/requirements.md`).
 
 ## Structure
 
@@ -161,6 +237,7 @@ src/
   server.js
   config/
   common/
+    ai/            # shared AI HTTP client + citation source resolution
   modules/
     auth/
     users/
@@ -185,3 +262,7 @@ Docs:
 - [API](docs/api.md)
 - [Data import](docs/data-import.md)
 - [Open questions](docs/open-questions.md)
+
+## License
+
+[Apache License 2.0](LICENSE)

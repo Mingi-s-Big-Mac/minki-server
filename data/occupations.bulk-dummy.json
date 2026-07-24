@@ -1,0 +1,4054 @@
+{
+  "_note": "BULK TEST/DEMO placeholder data for pagination/filter testing. NOT sourced from an official database. Skill/qualification/major NAMES are real (real certs, real degree names) but the occupation-to-skill/qual/major pairings and descriptions are synthetic test fixtures, not verified official associations.",
+  "sources": [
+    {
+      "externalId": "BULK-DUMMY-source-1",
+      "organization": "BULK DEMO placeholder (not an official source)",
+      "title": "Bulk demo dataset for pagination/filter testing",
+      "url": "https://example.com/bulk-demo-placeholder",
+      "accessedAt": "2026-07-24T00:00:00.000Z"
+    }
+  ],
+  "categories": [
+    {
+      "slug": "cat-1",
+      "name": "IT·개발",
+      "displayOrder": 1
+    },
+    {
+      "slug": "cat-2",
+      "name": "디자인",
+      "displayOrder": 2
+    },
+    {
+      "slug": "cat-3",
+      "name": "데이터",
+      "displayOrder": 3
+    },
+    {
+      "slug": "cat-4",
+      "name": "경영·비즈니스",
+      "displayOrder": 4
+    },
+    {
+      "slug": "cat-5",
+      "name": "마케팅·미디어",
+      "displayOrder": 5
+    },
+    {
+      "slug": "cat-6",
+      "name": "교육",
+      "displayOrder": 6
+    },
+    {
+      "slug": "cat-7",
+      "name": "의료·보건",
+      "displayOrder": 7
+    },
+    {
+      "slug": "cat-8",
+      "name": "제조·엔지니어링",
+      "displayOrder": 8
+    },
+    {
+      "slug": "cat-9",
+      "name": "건설·환경",
+      "displayOrder": 9
+    },
+    {
+      "slug": "cat-10",
+      "name": "문화·예술",
+      "displayOrder": 10
+    }
+  ],
+  "skills": [
+    {
+      "slug": "python",
+      "name": "Python"
+    },
+    {
+      "slug": "javascript",
+      "name": "JavaScript"
+    },
+    {
+      "slug": "skill-3",
+      "name": "TypeScript"
+    },
+    {
+      "slug": "skill-4",
+      "name": "Java"
+    },
+    {
+      "slug": "skill-5",
+      "name": "C++"
+    },
+    {
+      "slug": "skill-6",
+      "name": "C#"
+    },
+    {
+      "slug": "skill-7",
+      "name": "Go"
+    },
+    {
+      "slug": "skill-8",
+      "name": "Rust"
+    },
+    {
+      "slug": "skill-9",
+      "name": "Kotlin"
+    },
+    {
+      "slug": "skill-10",
+      "name": "Swift"
+    },
+    {
+      "slug": "sql",
+      "name": "SQL"
+    },
+    {
+      "slug": "skill-12",
+      "name": "NoSQL"
+    },
+    {
+      "slug": "skill-13",
+      "name": "MongoDB"
+    },
+    {
+      "slug": "skill-14",
+      "name": "PostgreSQL"
+    },
+    {
+      "slug": "skill-15",
+      "name": "MySQL"
+    },
+    {
+      "slug": "skill-16",
+      "name": "Redis"
+    },
+    {
+      "slug": "skill-17",
+      "name": "Docker"
+    },
+    {
+      "slug": "skill-18",
+      "name": "Kubernetes"
+    },
+    {
+      "slug": "skill-19",
+      "name": "AWS"
+    },
+    {
+      "slug": "skill-20",
+      "name": "GCP"
+    },
+    {
+      "slug": "skill-21",
+      "name": "Azure"
+    },
+    {
+      "slug": "skill-22",
+      "name": "Linux"
+    },
+    {
+      "slug": "skill-23",
+      "name": "Git"
+    },
+    {
+      "slug": "react",
+      "name": "React"
+    },
+    {
+      "slug": "skill-25",
+      "name": "Vue"
+    },
+    {
+      "slug": "skill-26",
+      "name": "Angular"
+    },
+    {
+      "slug": "skill-27",
+      "name": "Next.js"
+    },
+    {
+      "slug": "skill-28",
+      "name": "Node.js"
+    },
+    {
+      "slug": "skill-29",
+      "name": "Express"
+    },
+    {
+      "slug": "skill-30",
+      "name": "Spring"
+    },
+    {
+      "slug": "skill-31",
+      "name": "Django"
+    },
+    {
+      "slug": "skill-32",
+      "name": "Flask"
+    },
+    {
+      "slug": "skill-33",
+      "name": "GraphQL"
+    },
+    {
+      "slug": "skill-34",
+      "name": "REST API"
+    },
+    {
+      "slug": "skill-35",
+      "name": "CI/CD"
+    },
+    {
+      "slug": "skill-36",
+      "name": "Jenkins"
+    },
+    {
+      "slug": "skill-37",
+      "name": "Terraform"
+    },
+    {
+      "slug": "skill-38",
+      "name": "Ansible"
+    },
+    {
+      "slug": "skill-39",
+      "name": "TensorFlow"
+    },
+    {
+      "slug": "skill-40",
+      "name": "PyTorch"
+    },
+    {
+      "slug": "skill-41",
+      "name": "scikit-learn"
+    },
+    {
+      "slug": "skill-42",
+      "name": "Pandas"
+    },
+    {
+      "slug": "skill-43",
+      "name": "NumPy"
+    },
+    {
+      "slug": "skill-44",
+      "name": "Hadoop"
+    },
+    {
+      "slug": "skill-45",
+      "name": "Spark"
+    },
+    {
+      "slug": "skill-46",
+      "name": "Kafka"
+    },
+    {
+      "slug": "skill-47",
+      "name": "Elasticsearch"
+    },
+    {
+      "slug": "skill-48",
+      "name": "Selenium"
+    },
+    {
+      "slug": "skill-49",
+      "name": "Jest"
+    },
+    {
+      "slug": "skill-50",
+      "name": "머신러닝"
+    },
+    {
+      "slug": "skill-51",
+      "name": "딥러닝"
+    },
+    {
+      "slug": "skill-52",
+      "name": "데이터분석"
+    },
+    {
+      "slug": "skill-53",
+      "name": "데이터시각화"
+    },
+    {
+      "slug": "skill-54",
+      "name": "자연어처리"
+    },
+    {
+      "slug": "skill-55",
+      "name": "컴퓨터비전"
+    },
+    {
+      "slug": "figma",
+      "name": "Figma"
+    },
+    {
+      "slug": "skill-57",
+      "name": "Photoshop"
+    },
+    {
+      "slug": "skill-58",
+      "name": "Illustrator"
+    },
+    {
+      "slug": "skill-59",
+      "name": "Sketch"
+    },
+    {
+      "slug": "skill-60",
+      "name": "Adobe XD"
+    },
+    {
+      "slug": "skill-61",
+      "name": "After Effects"
+    },
+    {
+      "slug": "skill-62",
+      "name": "Premiere Pro"
+    },
+    {
+      "slug": "skill-63",
+      "name": "Blender"
+    },
+    {
+      "slug": "skill-64",
+      "name": "Zeplin"
+    },
+    {
+      "slug": "skill-65",
+      "name": "InVision"
+    },
+    {
+      "slug": "skill-66",
+      "name": "타이포그래피"
+    },
+    {
+      "slug": "skill-67",
+      "name": "UI디자인"
+    },
+    {
+      "slug": "skill-68",
+      "name": "UX리서치"
+    },
+    {
+      "slug": "skill-69",
+      "name": "브랜딩"
+    },
+    {
+      "slug": "skill-70",
+      "name": "3D모델링"
+    },
+    {
+      "slug": "skill-71",
+      "name": "엑셀"
+    },
+    {
+      "slug": "skill-72",
+      "name": "파워포인트"
+    },
+    {
+      "slug": "skill-73",
+      "name": "회계"
+    },
+    {
+      "slug": "skill-74",
+      "name": "재무분석"
+    },
+    {
+      "slug": "skill-75",
+      "name": "마케팅전략"
+    },
+    {
+      "slug": "skill-76",
+      "name": "SEO"
+    },
+    {
+      "slug": "skill-77",
+      "name": "콘텐츠기획"
+    },
+    {
+      "slug": "skill-78",
+      "name": "프로젝트관리"
+    },
+    {
+      "slug": "skill-79",
+      "name": "협상"
+    },
+    {
+      "slug": "skill-80",
+      "name": "세일즈"
+    },
+    {
+      "slug": "skill-81",
+      "name": "CRM"
+    },
+    {
+      "slug": "skill-82",
+      "name": "ERP"
+    },
+    {
+      "slug": "skill-83",
+      "name": "SAP"
+    },
+    {
+      "slug": "skill-84",
+      "name": "시장조사"
+    },
+    {
+      "slug": "skill-85",
+      "name": "커뮤니케이션"
+    },
+    {
+      "slug": "skill-86",
+      "name": "팀워크"
+    },
+    {
+      "slug": "skill-87",
+      "name": "문제해결능력"
+    },
+    {
+      "slug": "skill-88",
+      "name": "논리적사고"
+    },
+    {
+      "slug": "skill-89",
+      "name": "창의력"
+    },
+    {
+      "slug": "skill-90",
+      "name": "리더십"
+    },
+    {
+      "slug": "skill-91",
+      "name": "시간관리"
+    },
+    {
+      "slug": "skill-92",
+      "name": "발표능력"
+    },
+    {
+      "slug": "skill-93",
+      "name": "영어회화"
+    },
+    {
+      "slug": "skill-94",
+      "name": "중국어"
+    },
+    {
+      "slug": "skill-95",
+      "name": "일본어"
+    },
+    {
+      "slug": "skill-96",
+      "name": "통계학"
+    },
+    {
+      "slug": "skill-97",
+      "name": "회로설계"
+    },
+    {
+      "slug": "skill-98",
+      "name": "CAD"
+    },
+    {
+      "slug": "skill-99",
+      "name": "용접"
+    },
+    {
+      "slug": "skill-100",
+      "name": "전기공사"
+    },
+    {
+      "slug": "skill-101",
+      "name": "배관"
+    },
+    {
+      "slug": "skill-102",
+      "name": "조리"
+    },
+    {
+      "slug": "skill-103",
+      "name": "바리스타"
+    },
+    {
+      "slug": "skill-104",
+      "name": "사진촬영"
+    },
+    {
+      "slug": "skill-105",
+      "name": "영상편집"
+    },
+    {
+      "slug": "skill-106",
+      "name": "작곡"
+    },
+    {
+      "slug": "skill-107",
+      "name": "무대연출"
+    },
+    {
+      "slug": "skill-108",
+      "name": "간호술기"
+    },
+    {
+      "slug": "skill-109",
+      "name": "응급처치"
+    },
+    {
+      "slug": "skill-110",
+      "name": "심리상담"
+    },
+    {
+      "slug": "skill-111",
+      "name": "법률지식"
+    },
+    {
+      "slug": "skill-112",
+      "name": "세무회계"
+    },
+    {
+      "slug": "skill-113",
+      "name": "품질관리"
+    },
+    {
+      "slug": "skill-114",
+      "name": "생산관리"
+    },
+    {
+      "slug": "skill-115",
+      "name": "물류관리"
+    },
+    {
+      "slug": "skill-116",
+      "name": "재고관리"
+    },
+    {
+      "slug": "skill-117",
+      "name": "고객상담"
+    },
+    {
+      "slug": "skill-118",
+      "name": "교육기획"
+    },
+    {
+      "slug": "skill-119",
+      "name": "커리큘럼설계"
+    },
+    {
+      "slug": "skill-120",
+      "name": "실험설계"
+    }
+  ],
+  "qualifications": [
+    {
+      "slug": "engineer-info-processing",
+      "name": "정보처리기사",
+      "issuingOrganization": null
+    },
+    {
+      "slug": "qual-2",
+      "name": "정보처리산업기사",
+      "issuingOrganization": null
+    },
+    {
+      "slug": "qual-3",
+      "name": "정보보안기사",
+      "issuingOrganization": null
+    },
+    {
+      "slug": "qual-4",
+      "name": "리눅스마스터",
+      "issuingOrganization": null
+    },
+    {
+      "slug": "qual-5",
+      "name": "SQLD",
+      "issuingOrganization": null
+    },
+    {
+      "slug": "qual-6",
+      "name": "SQLP",
+      "issuingOrganization": null
+    },
+    {
+      "slug": "qual-7",
+      "name": "컴퓨터활용능력1급",
+      "issuingOrganization": null
+    },
+    {
+      "slug": "qual-8",
+      "name": "컴퓨터활용능력2급",
+      "issuingOrganization": null
+    },
+    {
+      "slug": "qual-9",
+      "name": "워드프로세서",
+      "issuingOrganization": null
+    },
+    {
+      "slug": "qual-10",
+      "name": "ADsP",
+      "issuingOrganization": null
+    },
+    {
+      "slug": "qual-11",
+      "name": "ADP",
+      "issuingOrganization": null
+    },
+    {
+      "slug": "qual-12",
+      "name": "빅데이터분석기사",
+      "issuingOrganization": null
+    },
+    {
+      "slug": "qual-13",
+      "name": "네트워크관리사",
+      "issuingOrganization": null
+    },
+    {
+      "slug": "qual-14",
+      "name": "전자계산기조직응용기사",
+      "issuingOrganization": null
+    },
+    {
+      "slug": "qual-15",
+      "name": "정보시스템감리사",
+      "issuingOrganization": null
+    },
+    {
+      "slug": "qual-16",
+      "name": "GTQ",
+      "issuingOrganization": null
+    },
+    {
+      "slug": "qual-17",
+      "name": "GTQi",
+      "issuingOrganization": null
+    },
+    {
+      "slug": "qual-18",
+      "name": "웹디자인기능사",
+      "issuingOrganization": null
+    },
+    {
+      "slug": "qual-19",
+      "name": "컬러리스트기사",
+      "issuingOrganization": null
+    },
+    {
+      "slug": "qual-20",
+      "name": "시각디자인기사",
+      "issuingOrganization": null
+    },
+    {
+      "slug": "qual-21",
+      "name": "제품디자인기사",
+      "issuingOrganization": null
+    },
+    {
+      "slug": "qual-22",
+      "name": "실내건축기사",
+      "issuingOrganization": null
+    },
+    {
+      "slug": "qual-23",
+      "name": "전기기사",
+      "issuingOrganization": null
+    },
+    {
+      "slug": "qual-24",
+      "name": "전기산업기사",
+      "issuingOrganization": null
+    },
+    {
+      "slug": "qual-25",
+      "name": "전기공사기사",
+      "issuingOrganization": null
+    },
+    {
+      "slug": "qual-26",
+      "name": "소방설비기사",
+      "issuingOrganization": null
+    },
+    {
+      "slug": "qual-27",
+      "name": "건축기사",
+      "issuingOrganization": null
+    },
+    {
+      "slug": "qual-28",
+      "name": "토목기사",
+      "issuingOrganization": null
+    },
+    {
+      "slug": "qual-29",
+      "name": "기계설계기사",
+      "issuingOrganization": null
+    },
+    {
+      "slug": "qual-30",
+      "name": "산업안전기사",
+      "issuingOrganization": null
+    },
+    {
+      "slug": "qual-31",
+      "name": "위험물산업기사",
+      "issuingOrganization": null
+    },
+    {
+      "slug": "qual-32",
+      "name": "용접기능사",
+      "issuingOrganization": null
+    },
+    {
+      "slug": "qual-33",
+      "name": "전산응용기계제도기능사",
+      "issuingOrganization": null
+    },
+    {
+      "slug": "qual-34",
+      "name": "자동차정비기능사",
+      "issuingOrganization": null
+    },
+    {
+      "slug": "qual-35",
+      "name": "조리기능사(한식)",
+      "issuingOrganization": null
+    },
+    {
+      "slug": "qual-36",
+      "name": "조리기능사(양식)",
+      "issuingOrganization": null
+    },
+    {
+      "slug": "qual-37",
+      "name": "바리스타2급",
+      "issuingOrganization": null
+    },
+    {
+      "slug": "qual-38",
+      "name": "제과기능사",
+      "issuingOrganization": null
+    },
+    {
+      "slug": "qual-39",
+      "name": "제빵기능사",
+      "issuingOrganization": null
+    },
+    {
+      "slug": "qual-40",
+      "name": "사회조사분석사2급",
+      "issuingOrganization": null
+    },
+    {
+      "slug": "qual-41",
+      "name": "재경관리사",
+      "issuingOrganization": null
+    },
+    {
+      "slug": "qual-42",
+      "name": "전산회계1급",
+      "issuingOrganization": null
+    },
+    {
+      "slug": "qual-43",
+      "name": "전산세무1급",
+      "issuingOrganization": null
+    },
+    {
+      "slug": "qual-44",
+      "name": "재무위험관리사",
+      "issuingOrganization": null
+    },
+    {
+      "slug": "qual-45",
+      "name": "투자자산운용사",
+      "issuingOrganization": null
+    },
+    {
+      "slug": "qual-46",
+      "name": "공인중개사",
+      "issuingOrganization": null
+    },
+    {
+      "slug": "qual-47",
+      "name": "관광통역안내사",
+      "issuingOrganization": null
+    },
+    {
+      "slug": "qual-48",
+      "name": "텝스",
+      "issuingOrganization": null
+    },
+    {
+      "slug": "qual-49",
+      "name": "토익",
+      "issuingOrganization": null
+    },
+    {
+      "slug": "qual-50",
+      "name": "오픽",
+      "issuingOrganization": null
+    },
+    {
+      "slug": "qual-51",
+      "name": "JLPT",
+      "issuingOrganization": null
+    },
+    {
+      "slug": "qual-52",
+      "name": "HSK",
+      "issuingOrganization": null
+    },
+    {
+      "slug": "qual-53",
+      "name": "한국사능력검정시험",
+      "issuingOrganization": null
+    },
+    {
+      "slug": "qual-54",
+      "name": "워드1급",
+      "issuingOrganization": null
+    },
+    {
+      "slug": "qual-55",
+      "name": "컴퓨터그래픽스운용기능사",
+      "issuingOrganization": null
+    },
+    {
+      "slug": "qual-56",
+      "name": "정보기기운용기능사",
+      "issuingOrganization": null
+    },
+    {
+      "slug": "qual-57",
+      "name": "사무자동화산업기사",
+      "issuingOrganization": null
+    },
+    {
+      "slug": "qual-58",
+      "name": "물류관리사",
+      "issuingOrganization": null
+    },
+    {
+      "slug": "qual-59",
+      "name": "유통관리사",
+      "issuingOrganization": null
+    },
+    {
+      "slug": "qual-60",
+      "name": "무역영어",
+      "issuingOrganization": null
+    },
+    {
+      "slug": "qual-61",
+      "name": "국제무역사",
+      "issuingOrganization": null
+    },
+    {
+      "slug": "qual-62",
+      "name": "손해사정사",
+      "issuingOrganization": null
+    },
+    {
+      "slug": "qual-63",
+      "name": "보험계리사",
+      "issuingOrganization": null
+    },
+    {
+      "slug": "qual-64",
+      "name": "세무사",
+      "issuingOrganization": null
+    },
+    {
+      "slug": "qual-65",
+      "name": "공인노무사",
+      "issuingOrganization": null
+    },
+    {
+      "slug": "qual-66",
+      "name": "감정평가사",
+      "issuingOrganization": null
+    },
+    {
+      "slug": "qual-67",
+      "name": "변리사",
+      "issuingOrganization": null
+    },
+    {
+      "slug": "qual-68",
+      "name": "임상병리사",
+      "issuingOrganization": null
+    },
+    {
+      "slug": "qual-69",
+      "name": "방사선사",
+      "issuingOrganization": null
+    },
+    {
+      "slug": "qual-70",
+      "name": "물리치료사",
+      "issuingOrganization": null
+    },
+    {
+      "slug": "qual-71",
+      "name": "작업치료사",
+      "issuingOrganization": null
+    },
+    {
+      "slug": "qual-72",
+      "name": "간호조무사",
+      "issuingOrganization": null
+    },
+    {
+      "slug": "qual-73",
+      "name": "요양보호사",
+      "issuingOrganization": null
+    },
+    {
+      "slug": "qual-74",
+      "name": "사회복지사2급",
+      "issuingOrganization": null
+    },
+    {
+      "slug": "qual-75",
+      "name": "청소년상담사",
+      "issuingOrganization": null
+    },
+    {
+      "slug": "qual-76",
+      "name": "직업상담사",
+      "issuingOrganization": null
+    },
+    {
+      "slug": "qual-77",
+      "name": "보육교사2급",
+      "issuingOrganization": null
+    },
+    {
+      "slug": "qual-78",
+      "name": "유치원정교사2급",
+      "issuingOrganization": null
+    },
+    {
+      "slug": "qual-79",
+      "name": "중등교사자격증",
+      "issuingOrganization": null
+    },
+    {
+      "slug": "qual-80",
+      "name": "특수교사자격증",
+      "issuingOrganization": null
+    },
+    {
+      "slug": "qual-81",
+      "name": "사서자격증",
+      "issuingOrganization": null
+    },
+    {
+      "slug": "qual-82",
+      "name": "문화재수리기술자",
+      "issuingOrganization": null
+    },
+    {
+      "slug": "qual-83",
+      "name": "조경기사",
+      "issuingOrganization": null
+    },
+    {
+      "slug": "qual-84",
+      "name": "산림기사",
+      "issuingOrganization": null
+    },
+    {
+      "slug": "qual-85",
+      "name": "수질환경기사",
+      "issuingOrganization": null
+    },
+    {
+      "slug": "qual-86",
+      "name": "대기환경기사",
+      "issuingOrganization": null
+    },
+    {
+      "slug": "qual-87",
+      "name": "폐기물처리기사",
+      "issuingOrganization": null
+    },
+    {
+      "slug": "qual-88",
+      "name": "에너지관리기사",
+      "issuingOrganization": null
+    },
+    {
+      "slug": "qual-89",
+      "name": "신재생에너지발전설비기사",
+      "issuingOrganization": null
+    },
+    {
+      "slug": "qual-90",
+      "name": "정보통신기사",
+      "issuingOrganization": null
+    },
+    {
+      "slug": "qual-91",
+      "name": "무선설비기사",
+      "issuingOrganization": null
+    },
+    {
+      "slug": "qual-92",
+      "name": "방송통신기사",
+      "issuingOrganization": null
+    },
+    {
+      "slug": "qual-93",
+      "name": "멀티미디어콘텐츠제작전문가",
+      "issuingOrganization": null
+    },
+    {
+      "slug": "qual-94",
+      "name": "게임기획전문가",
+      "issuingOrganization": null
+    },
+    {
+      "slug": "qual-95",
+      "name": "게임그래픽전문가",
+      "issuingOrganization": null
+    },
+    {
+      "slug": "qual-96",
+      "name": "PMP",
+      "issuingOrganization": null
+    },
+    {
+      "slug": "qual-97",
+      "name": "ITIL",
+      "issuingOrganization": null
+    },
+    {
+      "slug": "qual-98",
+      "name": "CCNA",
+      "issuingOrganization": null
+    },
+    {
+      "slug": "qual-99",
+      "name": "CCNP",
+      "issuingOrganization": null
+    },
+    {
+      "slug": "qual-100",
+      "name": "AWS솔루션즈아키텍트",
+      "issuingOrganization": null
+    },
+    {
+      "slug": "qual-101",
+      "name": "정보처리기능사",
+      "issuingOrganization": null
+    },
+    {
+      "slug": "qual-102",
+      "name": "유기농업기사",
+      "issuingOrganization": null
+    },
+    {
+      "slug": "qual-103",
+      "name": "수산양식기사",
+      "issuingOrganization": null
+    },
+    {
+      "slug": "qual-104",
+      "name": "조주기능사",
+      "issuingOrganization": null
+    },
+    {
+      "slug": "qual-105",
+      "name": "미용사(일반)",
+      "issuingOrganization": null
+    },
+    {
+      "slug": "qual-106",
+      "name": "피부미용사",
+      "issuingOrganization": null
+    },
+    {
+      "slug": "qual-107",
+      "name": "메이크업아티스트",
+      "issuingOrganization": null
+    },
+    {
+      "slug": "qual-108",
+      "name": "네일아티스트",
+      "issuingOrganization": null
+    },
+    {
+      "slug": "qual-109",
+      "name": "플로리스트",
+      "issuingOrganization": null
+    },
+    {
+      "slug": "qual-110",
+      "name": "한복기능사",
+      "issuingOrganization": null
+    }
+  ],
+  "majors": [
+    {
+      "slug": "computer-science",
+      "name": "컴퓨터공학과"
+    },
+    {
+      "slug": "major-2",
+      "name": "소프트웨어학과"
+    },
+    {
+      "slug": "major-3",
+      "name": "정보통신공학과"
+    },
+    {
+      "slug": "major-4",
+      "name": "전자공학과"
+    },
+    {
+      "slug": "major-5",
+      "name": "전기공학과"
+    },
+    {
+      "slug": "major-6",
+      "name": "기계공학과"
+    },
+    {
+      "slug": "major-7",
+      "name": "산업공학과"
+    },
+    {
+      "slug": "major-8",
+      "name": "화학공학과"
+    },
+    {
+      "slug": "major-9",
+      "name": "신소재공학과"
+    },
+    {
+      "slug": "major-10",
+      "name": "건축공학과"
+    },
+    {
+      "slug": "major-11",
+      "name": "건축학과"
+    },
+    {
+      "slug": "major-12",
+      "name": "토목공학과"
+    },
+    {
+      "slug": "major-13",
+      "name": "환경공학과"
+    },
+    {
+      "slug": "major-14",
+      "name": "로봇공학과"
+    },
+    {
+      "slug": "major-15",
+      "name": "항공우주공학과"
+    },
+    {
+      "slug": "major-16",
+      "name": "조선해양공학과"
+    },
+    {
+      "slug": "major-17",
+      "name": "에너지공학과"
+    },
+    {
+      "slug": "major-18",
+      "name": "원자력공학과"
+    },
+    {
+      "slug": "major-19",
+      "name": "데이터사이언스학과"
+    },
+    {
+      "slug": "major-20",
+      "name": "인공지능학과"
+    },
+    {
+      "slug": "major-21",
+      "name": "정보보안학과"
+    },
+    {
+      "slug": "major-22",
+      "name": "게임공학과"
+    },
+    {
+      "slug": "major-23",
+      "name": "미디어커뮤니케이션학과"
+    },
+    {
+      "slug": "major-24",
+      "name": "경영학과"
+    },
+    {
+      "slug": "major-25",
+      "name": "경제학과"
+    },
+    {
+      "slug": "major-26",
+      "name": "회계학과"
+    },
+    {
+      "slug": "major-27",
+      "name": "세무학과"
+    },
+    {
+      "slug": "major-28",
+      "name": "국제통상학과"
+    },
+    {
+      "slug": "major-29",
+      "name": "무역학과"
+    },
+    {
+      "slug": "major-30",
+      "name": "금융학과"
+    },
+    {
+      "slug": "major-31",
+      "name": "마케팅학과"
+    },
+    {
+      "slug": "major-32",
+      "name": "광고홍보학과"
+    },
+    {
+      "slug": "major-33",
+      "name": "언론정보학과"
+    },
+    {
+      "slug": "major-34",
+      "name": "신문방송학과"
+    },
+    {
+      "slug": "design",
+      "name": "디자인학과"
+    },
+    {
+      "slug": "major-36",
+      "name": "시각디자인학과"
+    },
+    {
+      "slug": "major-37",
+      "name": "산업디자인학과"
+    },
+    {
+      "slug": "major-38",
+      "name": "패션디자인학과"
+    },
+    {
+      "slug": "major-39",
+      "name": "실내디자인학과"
+    },
+    {
+      "slug": "major-40",
+      "name": "영상디자인학과"
+    },
+    {
+      "slug": "major-41",
+      "name": "애니메이션학과"
+    },
+    {
+      "slug": "major-42",
+      "name": "미술학과"
+    },
+    {
+      "slug": "major-43",
+      "name": "조소과"
+    },
+    {
+      "slug": "major-44",
+      "name": "음악학과"
+    },
+    {
+      "slug": "major-45",
+      "name": "작곡과"
+    },
+    {
+      "slug": "major-46",
+      "name": "성악과"
+    },
+    {
+      "slug": "major-47",
+      "name": "실용음악학과"
+    },
+    {
+      "slug": "major-48",
+      "name": "연극영화학과"
+    },
+    {
+      "slug": "major-49",
+      "name": "무용학과"
+    },
+    {
+      "slug": "major-50",
+      "name": "체육학과"
+    },
+    {
+      "slug": "major-51",
+      "name": "스포츠과학과"
+    },
+    {
+      "slug": "major-52",
+      "name": "간호학과"
+    },
+    {
+      "slug": "major-53",
+      "name": "의학과"
+    },
+    {
+      "slug": "major-54",
+      "name": "치의학과"
+    },
+    {
+      "slug": "major-55",
+      "name": "한의학과"
+    },
+    {
+      "slug": "major-56",
+      "name": "약학과"
+    },
+    {
+      "slug": "major-57",
+      "name": "물리치료학과"
+    },
+    {
+      "slug": "major-58",
+      "name": "작업치료학과"
+    },
+    {
+      "slug": "major-59",
+      "name": "임상병리학과"
+    },
+    {
+      "slug": "major-60",
+      "name": "방사선학과"
+    },
+    {
+      "slug": "major-61",
+      "name": "응급구조학과"
+    },
+    {
+      "slug": "major-62",
+      "name": "사회복지학과"
+    },
+    {
+      "slug": "major-63",
+      "name": "심리학과"
+    },
+    {
+      "slug": "major-64",
+      "name": "아동학과"
+    },
+    {
+      "slug": "major-65",
+      "name": "청소년학과"
+    },
+    {
+      "slug": "major-66",
+      "name": "상담심리학과"
+    },
+    {
+      "slug": "major-67",
+      "name": "교육학과"
+    },
+    {
+      "slug": "major-68",
+      "name": "유아교육학과"
+    },
+    {
+      "slug": "major-69",
+      "name": "초등교육학과"
+    },
+    {
+      "slug": "major-70",
+      "name": "특수교육학과"
+    },
+    {
+      "slug": "major-71",
+      "name": "국어교육학과"
+    },
+    {
+      "slug": "major-72",
+      "name": "영어교육학과"
+    },
+    {
+      "slug": "major-73",
+      "name": "수학교육학과"
+    },
+    {
+      "slug": "major-74",
+      "name": "화학과"
+    },
+    {
+      "slug": "major-75",
+      "name": "물리학과"
+    },
+    {
+      "slug": "major-76",
+      "name": "생물학과"
+    },
+    {
+      "slug": "major-77",
+      "name": "수학과"
+    },
+    {
+      "slug": "major-78",
+      "name": "통계학과"
+    },
+    {
+      "slug": "major-79",
+      "name": "지구과학과"
+    },
+    {
+      "slug": "major-80",
+      "name": "천문학과"
+    },
+    {
+      "slug": "major-81",
+      "name": "식품영양학과"
+    },
+    {
+      "slug": "major-82",
+      "name": "조리학과"
+    },
+    {
+      "slug": "major-83",
+      "name": "외식경영학과"
+    },
+    {
+      "slug": "major-84",
+      "name": "관광경영학과"
+    },
+    {
+      "slug": "major-85",
+      "name": "호텔경영학과"
+    },
+    {
+      "slug": "major-86",
+      "name": "항공서비스학과"
+    },
+    {
+      "slug": "major-87",
+      "name": "법학과"
+    },
+    {
+      "slug": "major-88",
+      "name": "행정학과"
+    },
+    {
+      "slug": "major-89",
+      "name": "정치외교학과"
+    },
+    {
+      "slug": "major-90",
+      "name": "사회학과"
+    },
+    {
+      "slug": "major-91",
+      "name": "문헌정보학과"
+    },
+    {
+      "slug": "major-92",
+      "name": "사학과"
+    },
+    {
+      "slug": "major-93",
+      "name": "철학과"
+    },
+    {
+      "slug": "major-94",
+      "name": "국어국문학과"
+    },
+    {
+      "slug": "major-95",
+      "name": "영어영문학과"
+    },
+    {
+      "slug": "major-96",
+      "name": "중어중문학과"
+    },
+    {
+      "slug": "major-97",
+      "name": "일어일본학과"
+    },
+    {
+      "slug": "major-98",
+      "name": "불어불문학과"
+    },
+    {
+      "slug": "major-99",
+      "name": "독어독문학과"
+    },
+    {
+      "slug": "major-100",
+      "name": "스페인어학과"
+    }
+  ],
+  "occupations": [
+    {
+      "categorySlug": "cat-1",
+      "slug": "occ-1",
+      "name": "백엔드 개발자",
+      "summary": "(DEMO) 백엔드 개발자 직무 테스트용 요약입니다.",
+      "description": "(DEMO placeholder) 실제 공식 데이터가 아닙니다. IT·개발 분야에서 활동하는 백엔드 개발자 직무에 대한 테스트용 설명입니다.",
+      "skills": [
+        {
+          "slug": "python",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        },
+        {
+          "slug": "sql",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        }
+      ],
+      "qualifications": [
+        {
+          "slug": "engineer-info-processing",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        }
+      ],
+      "majors": [
+        {
+          "slug": "computer-science",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        }
+      ]
+    },
+    {
+      "categorySlug": "cat-1",
+      "slug": "occ-2",
+      "name": "프론트엔드 개발자",
+      "summary": "(DEMO) 프론트엔드 개발자 직무 테스트용 요약입니다.",
+      "description": "(DEMO placeholder) 실제 공식 데이터가 아닙니다. IT·개발 분야에서 활동하는 프론트엔드 개발자 직무에 대한 테스트용 설명입니다.",
+      "skills": [
+        {
+          "slug": "javascript",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        },
+        {
+          "slug": "react",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        }
+      ],
+      "qualifications": [],
+      "majors": [
+        {
+          "slug": "computer-science",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        }
+      ]
+    },
+    {
+      "categorySlug": "cat-1",
+      "slug": "occ-3",
+      "name": "모바일 앱 개발자",
+      "summary": "(DEMO) 모바일 앱 개발자 직무 테스트용 요약입니다.",
+      "description": "(DEMO placeholder) 실제 공식 데이터가 아닙니다. IT·개발 분야에서 활동하는 모바일 앱 개발자 직무에 대한 테스트용 설명입니다.",
+      "skills": [
+        {
+          "slug": "skill-9",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        },
+        {
+          "slug": "skill-10",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        }
+      ],
+      "qualifications": [
+        {
+          "slug": "engineer-info-processing",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        }
+      ],
+      "majors": [
+        {
+          "slug": "major-2",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        }
+      ]
+    },
+    {
+      "categorySlug": "cat-1",
+      "slug": "occ-4",
+      "name": "데이터 엔지니어",
+      "summary": "(DEMO) 데이터 엔지니어 직무 테스트용 요약입니다.",
+      "description": "(DEMO placeholder) 실제 공식 데이터가 아닙니다. IT·개발 분야에서 활동하는 데이터 엔지니어 직무에 대한 테스트용 설명입니다.",
+      "skills": [
+        {
+          "slug": "skill-45",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        },
+        {
+          "slug": "skill-44",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        }
+      ],
+      "qualifications": [
+        {
+          "slug": "qual-12",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        }
+      ],
+      "majors": [
+        {
+          "slug": "major-19",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        }
+      ]
+    },
+    {
+      "categorySlug": "cat-1",
+      "slug": "occ-5",
+      "name": "DevOps 엔지니어",
+      "summary": "(DEMO) DevOps 엔지니어 직무 테스트용 요약입니다.",
+      "description": "(DEMO placeholder) 실제 공식 데이터가 아닙니다. IT·개발 분야에서 활동하는 DevOps 엔지니어 직무에 대한 테스트용 설명입니다.",
+      "skills": [
+        {
+          "slug": "skill-17",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        },
+        {
+          "slug": "skill-18",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        }
+      ],
+      "qualifications": [
+        {
+          "slug": "qual-4",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        }
+      ],
+      "majors": [
+        {
+          "slug": "computer-science",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        }
+      ]
+    },
+    {
+      "categorySlug": "cat-1",
+      "slug": "occ-6",
+      "name": "정보보안 전문가",
+      "summary": "(DEMO) 정보보안 전문가 직무 테스트용 요약입니다.",
+      "description": "(DEMO placeholder) 실제 공식 데이터가 아닙니다. IT·개발 분야에서 활동하는 정보보안 전문가 직무에 대한 테스트용 설명입니다.",
+      "skills": [],
+      "qualifications": [
+        {
+          "slug": "qual-3",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        }
+      ],
+      "majors": [
+        {
+          "slug": "major-21",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        }
+      ]
+    },
+    {
+      "categorySlug": "cat-1",
+      "slug": "occ-7",
+      "name": "QA 엔지니어",
+      "summary": "(DEMO) QA 엔지니어 직무 테스트용 요약입니다.",
+      "description": "(DEMO placeholder) 실제 공식 데이터가 아닙니다. IT·개발 분야에서 활동하는 QA 엔지니어 직무에 대한 테스트용 설명입니다.",
+      "skills": [
+        {
+          "slug": "skill-48",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        },
+        {
+          "slug": "skill-49",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        }
+      ],
+      "qualifications": [],
+      "majors": [
+        {
+          "slug": "major-2",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        }
+      ]
+    },
+    {
+      "categorySlug": "cat-1",
+      "slug": "occ-8",
+      "name": "머신러닝 엔지니어",
+      "summary": "(DEMO) 머신러닝 엔지니어 직무 테스트용 요약입니다.",
+      "description": "(DEMO placeholder) 실제 공식 데이터가 아닙니다. IT·개발 분야에서 활동하는 머신러닝 엔지니어 직무에 대한 테스트용 설명입니다.",
+      "skills": [
+        {
+          "slug": "skill-39",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        },
+        {
+          "slug": "skill-40",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        }
+      ],
+      "qualifications": [
+        {
+          "slug": "qual-12",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        }
+      ],
+      "majors": [
+        {
+          "slug": "major-20",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        }
+      ]
+    },
+    {
+      "categorySlug": "cat-1",
+      "slug": "occ-9",
+      "name": "게임 클라이언트 개발자",
+      "summary": "(DEMO) 게임 클라이언트 개발자 직무 테스트용 요약입니다.",
+      "description": "(DEMO placeholder) 실제 공식 데이터가 아닙니다. IT·개발 분야에서 활동하는 게임 클라이언트 개발자 직무에 대한 테스트용 설명입니다.",
+      "skills": [
+        {
+          "slug": "skill-5",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        },
+        {
+          "slug": "skill-9",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        }
+      ],
+      "qualifications": [],
+      "majors": [
+        {
+          "slug": "major-22",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        }
+      ]
+    },
+    {
+      "categorySlug": "cat-1",
+      "slug": "occ-10",
+      "name": "클라우드 엔지니어",
+      "summary": "(DEMO) 클라우드 엔지니어 직무 테스트용 요약입니다.",
+      "description": "(DEMO placeholder) 실제 공식 데이터가 아닙니다. IT·개발 분야에서 활동하는 클라우드 엔지니어 직무에 대한 테스트용 설명입니다.",
+      "skills": [
+        {
+          "slug": "skill-19",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        },
+        {
+          "slug": "skill-37",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        }
+      ],
+      "qualifications": [
+        {
+          "slug": "qual-100",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        }
+      ],
+      "majors": [
+        {
+          "slug": "major-3",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        }
+      ]
+    },
+    {
+      "categorySlug": "cat-2",
+      "slug": "occ-11",
+      "name": "UX 디자이너",
+      "summary": "(DEMO) UX 디자이너 직무 테스트용 요약입니다.",
+      "description": "(DEMO placeholder) 실제 공식 데이터가 아닙니다. 디자인 분야에서 활동하는 UX 디자이너 직무에 대한 테스트용 설명입니다.",
+      "skills": [
+        {
+          "slug": "skill-68",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        },
+        {
+          "slug": "figma",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        }
+      ],
+      "qualifications": [],
+      "majors": [
+        {
+          "slug": "design",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        }
+      ]
+    },
+    {
+      "categorySlug": "cat-2",
+      "slug": "occ-12",
+      "name": "UI 디자이너",
+      "summary": "(DEMO) UI 디자이너 직무 테스트용 요약입니다.",
+      "description": "(DEMO placeholder) 실제 공식 데이터가 아닙니다. 디자인 분야에서 활동하는 UI 디자이너 직무에 대한 테스트용 설명입니다.",
+      "skills": [
+        {
+          "slug": "skill-67",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        },
+        {
+          "slug": "figma",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        }
+      ],
+      "qualifications": [
+        {
+          "slug": "qual-16",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        }
+      ],
+      "majors": [
+        {
+          "slug": "major-36",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        }
+      ]
+    },
+    {
+      "categorySlug": "cat-2",
+      "slug": "occ-13",
+      "name": "그래픽 디자이너",
+      "summary": "(DEMO) 그래픽 디자이너 직무 테스트용 요약입니다.",
+      "description": "(DEMO placeholder) 실제 공식 데이터가 아닙니다. 디자인 분야에서 활동하는 그래픽 디자이너 직무에 대한 테스트용 설명입니다.",
+      "skills": [
+        {
+          "slug": "skill-58",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        },
+        {
+          "slug": "skill-57",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        }
+      ],
+      "qualifications": [
+        {
+          "slug": "qual-16",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        }
+      ],
+      "majors": [
+        {
+          "slug": "major-36",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        }
+      ]
+    },
+    {
+      "categorySlug": "cat-2",
+      "slug": "occ-14",
+      "name": "제품 디자이너",
+      "summary": "(DEMO) 제품 디자이너 직무 테스트용 요약입니다.",
+      "description": "(DEMO placeholder) 실제 공식 데이터가 아닙니다. 디자인 분야에서 활동하는 제품 디자이너 직무에 대한 테스트용 설명입니다.",
+      "skills": [
+        {
+          "slug": "skill-70",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        },
+        {
+          "slug": "skill-98",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        }
+      ],
+      "qualifications": [
+        {
+          "slug": "qual-21",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        }
+      ],
+      "majors": [
+        {
+          "slug": "major-37",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        }
+      ]
+    },
+    {
+      "categorySlug": "cat-2",
+      "slug": "occ-15",
+      "name": "패션 디자이너",
+      "summary": "(DEMO) 패션 디자이너 직무 테스트용 요약입니다.",
+      "description": "(DEMO placeholder) 실제 공식 데이터가 아닙니다. 디자인 분야에서 활동하는 패션 디자이너 직무에 대한 테스트용 설명입니다.",
+      "skills": [
+        {
+          "slug": "skill-66",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        }
+      ],
+      "qualifications": [],
+      "majors": [
+        {
+          "slug": "major-38",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        }
+      ]
+    },
+    {
+      "categorySlug": "cat-2",
+      "slug": "occ-16",
+      "name": "영상 디자이너",
+      "summary": "(DEMO) 영상 디자이너 직무 테스트용 요약입니다.",
+      "description": "(DEMO placeholder) 실제 공식 데이터가 아닙니다. 디자인 분야에서 활동하는 영상 디자이너 직무에 대한 테스트용 설명입니다.",
+      "skills": [
+        {
+          "slug": "skill-61",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        },
+        {
+          "slug": "skill-62",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        }
+      ],
+      "qualifications": [
+        {
+          "slug": "qual-93",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        }
+      ],
+      "majors": [
+        {
+          "slug": "major-40",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        }
+      ]
+    },
+    {
+      "categorySlug": "cat-2",
+      "slug": "occ-17",
+      "name": "브랜드 디자이너",
+      "summary": "(DEMO) 브랜드 디자이너 직무 테스트용 요약입니다.",
+      "description": "(DEMO placeholder) 실제 공식 데이터가 아닙니다. 디자인 분야에서 활동하는 브랜드 디자이너 직무에 대한 테스트용 설명입니다.",
+      "skills": [
+        {
+          "slug": "skill-69",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        },
+        {
+          "slug": "skill-58",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        }
+      ],
+      "qualifications": [],
+      "majors": [
+        {
+          "slug": "major-36",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        }
+      ]
+    },
+    {
+      "categorySlug": "cat-2",
+      "slug": "occ-18",
+      "name": "인테리어 디자이너",
+      "summary": "(DEMO) 인테리어 디자이너 직무 테스트용 요약입니다.",
+      "description": "(DEMO placeholder) 실제 공식 데이터가 아닙니다. 디자인 분야에서 활동하는 인테리어 디자이너 직무에 대한 테스트용 설명입니다.",
+      "skills": [
+        {
+          "slug": "skill-98",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        }
+      ],
+      "qualifications": [
+        {
+          "slug": "qual-22",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        }
+      ],
+      "majors": [
+        {
+          "slug": "major-39",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        }
+      ]
+    },
+    {
+      "categorySlug": "cat-3",
+      "slug": "occ-19",
+      "name": "데이터 분석가",
+      "summary": "(DEMO) 데이터 분석가 직무 테스트용 요약입니다.",
+      "description": "(DEMO placeholder) 실제 공식 데이터가 아닙니다. 데이터 분야에서 활동하는 데이터 분석가 직무에 대한 테스트용 설명입니다.",
+      "skills": [
+        {
+          "slug": "sql",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        },
+        {
+          "slug": "skill-52",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        }
+      ],
+      "qualifications": [
+        {
+          "slug": "qual-10",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        }
+      ],
+      "majors": [
+        {
+          "slug": "major-19",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        }
+      ]
+    },
+    {
+      "categorySlug": "cat-3",
+      "slug": "occ-20",
+      "name": "데이터 사이언티스트",
+      "summary": "(DEMO) 데이터 사이언티스트 직무 테스트용 요약입니다.",
+      "description": "(DEMO placeholder) 실제 공식 데이터가 아닙니다. 데이터 분야에서 활동하는 데이터 사이언티스트 직무에 대한 테스트용 설명입니다.",
+      "skills": [
+        {
+          "slug": "python",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        },
+        {
+          "slug": "skill-50",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        }
+      ],
+      "qualifications": [
+        {
+          "slug": "qual-12",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        }
+      ],
+      "majors": [
+        {
+          "slug": "major-78",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        }
+      ]
+    },
+    {
+      "categorySlug": "cat-3",
+      "slug": "occ-21",
+      "name": "비즈니스 애널리스트",
+      "summary": "(DEMO) 비즈니스 애널리스트 직무 테스트용 요약입니다.",
+      "description": "(DEMO placeholder) 실제 공식 데이터가 아닙니다. 데이터 분야에서 활동하는 비즈니스 애널리스트 직무에 대한 테스트용 설명입니다.",
+      "skills": [
+        {
+          "slug": "skill-71",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        },
+        {
+          "slug": "skill-53",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        }
+      ],
+      "qualifications": [
+        {
+          "slug": "qual-10",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        }
+      ],
+      "majors": [
+        {
+          "slug": "major-24",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        }
+      ]
+    },
+    {
+      "categorySlug": "cat-3",
+      "slug": "occ-22",
+      "name": "통계 분석가",
+      "summary": "(DEMO) 통계 분석가 직무 테스트용 요약입니다.",
+      "description": "(DEMO placeholder) 실제 공식 데이터가 아닙니다. 데이터 분야에서 활동하는 통계 분석가 직무에 대한 테스트용 설명입니다.",
+      "skills": [
+        {
+          "slug": "skill-96",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        },
+        {
+          "slug": "sql",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        }
+      ],
+      "qualifications": [
+        {
+          "slug": "qual-40",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        }
+      ],
+      "majors": [
+        {
+          "slug": "major-78",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        }
+      ]
+    },
+    {
+      "categorySlug": "cat-4",
+      "slug": "occ-23",
+      "name": "경영 컨설턴트",
+      "summary": "(DEMO) 경영 컨설턴트 직무 테스트용 요약입니다.",
+      "description": "(DEMO placeholder) 실제 공식 데이터가 아닙니다. 경영·비즈니스 분야에서 활동하는 경영 컨설턴트 직무에 대한 테스트용 설명입니다.",
+      "skills": [
+        {
+          "slug": "skill-84",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        },
+        {
+          "slug": "skill-79",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        }
+      ],
+      "qualifications": [
+        {
+          "slug": "qual-41",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        }
+      ],
+      "majors": [
+        {
+          "slug": "major-24",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        }
+      ]
+    },
+    {
+      "categorySlug": "cat-4",
+      "slug": "occ-24",
+      "name": "회계사",
+      "summary": "(DEMO) 회계사 직무 테스트용 요약입니다.",
+      "description": "(DEMO placeholder) 실제 공식 데이터가 아닙니다. 경영·비즈니스 분야에서 활동하는 회계사 직무에 대한 테스트용 설명입니다.",
+      "skills": [
+        {
+          "slug": "skill-73",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        },
+        {
+          "slug": "skill-112",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        }
+      ],
+      "qualifications": [
+        {
+          "slug": "qual-42",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        }
+      ],
+      "majors": [
+        {
+          "slug": "major-26",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        }
+      ]
+    },
+    {
+      "categorySlug": "cat-4",
+      "slug": "occ-25",
+      "name": "세무사",
+      "summary": "(DEMO) 세무사 직무 테스트용 요약입니다.",
+      "description": "(DEMO placeholder) 실제 공식 데이터가 아닙니다. 경영·비즈니스 분야에서 활동하는 세무사 직무에 대한 테스트용 설명입니다.",
+      "skills": [
+        {
+          "slug": "skill-112",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        }
+      ],
+      "qualifications": [
+        {
+          "slug": "qual-43",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        }
+      ],
+      "majors": [
+        {
+          "slug": "major-27",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        }
+      ]
+    },
+    {
+      "categorySlug": "cat-4",
+      "slug": "occ-26",
+      "name": "인사담당자",
+      "summary": "(DEMO) 인사담당자 직무 테스트용 요약입니다.",
+      "description": "(DEMO placeholder) 실제 공식 데이터가 아닙니다. 경영·비즈니스 분야에서 활동하는 인사담당자 직무에 대한 테스트용 설명입니다.",
+      "skills": [
+        {
+          "slug": "skill-85",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        },
+        {
+          "slug": "skill-79",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        }
+      ],
+      "qualifications": [],
+      "majors": [
+        {
+          "slug": "major-24",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        }
+      ]
+    },
+    {
+      "categorySlug": "cat-4",
+      "slug": "occ-27",
+      "name": "재무 분석가",
+      "summary": "(DEMO) 재무 분석가 직무 테스트용 요약입니다.",
+      "description": "(DEMO placeholder) 실제 공식 데이터가 아닙니다. 경영·비즈니스 분야에서 활동하는 재무 분석가 직무에 대한 테스트용 설명입니다.",
+      "skills": [
+        {
+          "slug": "skill-74",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        },
+        {
+          "slug": "skill-71",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        }
+      ],
+      "qualifications": [
+        {
+          "slug": "qual-45",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        }
+      ],
+      "majors": [
+        {
+          "slug": "major-30",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        }
+      ]
+    },
+    {
+      "categorySlug": "cat-4",
+      "slug": "occ-28",
+      "name": "무역 사무원",
+      "summary": "(DEMO) 무역 사무원 직무 테스트용 요약입니다.",
+      "description": "(DEMO placeholder) 실제 공식 데이터가 아닙니다. 경영·비즈니스 분야에서 활동하는 무역 사무원 직무에 대한 테스트용 설명입니다.",
+      "skills": [],
+      "qualifications": [
+        {
+          "slug": "qual-61",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        }
+      ],
+      "majors": [
+        {
+          "slug": "major-28",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        }
+      ]
+    },
+    {
+      "categorySlug": "cat-4",
+      "slug": "occ-29",
+      "name": "물류 관리자",
+      "summary": "(DEMO) 물류 관리자 직무 테스트용 요약입니다.",
+      "description": "(DEMO placeholder) 실제 공식 데이터가 아닙니다. 경영·비즈니스 분야에서 활동하는 물류 관리자 직무에 대한 테스트용 설명입니다.",
+      "skills": [
+        {
+          "slug": "skill-115",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        },
+        {
+          "slug": "skill-116",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        }
+      ],
+      "qualifications": [
+        {
+          "slug": "qual-58",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        }
+      ],
+      "majors": [
+        {
+          "slug": "major-7",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        }
+      ]
+    },
+    {
+      "categorySlug": "cat-4",
+      "slug": "occ-30",
+      "name": "공인노무사",
+      "summary": "(DEMO) 공인노무사 직무 테스트용 요약입니다.",
+      "description": "(DEMO placeholder) 실제 공식 데이터가 아닙니다. 경영·비즈니스 분야에서 활동하는 공인노무사 직무에 대한 테스트용 설명입니다.",
+      "skills": [
+        {
+          "slug": "skill-111",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        }
+      ],
+      "qualifications": [
+        {
+          "slug": "qual-65",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        }
+      ],
+      "majors": [
+        {
+          "slug": "major-87",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        }
+      ]
+    },
+    {
+      "categorySlug": "cat-5",
+      "slug": "occ-31",
+      "name": "마케팅 매니저",
+      "summary": "(DEMO) 마케팅 매니저 직무 테스트용 요약입니다.",
+      "description": "(DEMO placeholder) 실제 공식 데이터가 아닙니다. 마케팅·미디어 분야에서 활동하는 마케팅 매니저 직무에 대한 테스트용 설명입니다.",
+      "skills": [
+        {
+          "slug": "skill-75",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        },
+        {
+          "slug": "skill-76",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        }
+      ],
+      "qualifications": [],
+      "majors": [
+        {
+          "slug": "major-31",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        }
+      ]
+    },
+    {
+      "categorySlug": "cat-5",
+      "slug": "occ-32",
+      "name": "콘텐츠 마케터",
+      "summary": "(DEMO) 콘텐츠 마케터 직무 테스트용 요약입니다.",
+      "description": "(DEMO placeholder) 실제 공식 데이터가 아닙니다. 마케팅·미디어 분야에서 활동하는 콘텐츠 마케터 직무에 대한 테스트용 설명입니다.",
+      "skills": [
+        {
+          "slug": "skill-77",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        },
+        {
+          "slug": "skill-76",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        }
+      ],
+      "qualifications": [],
+      "majors": [
+        {
+          "slug": "major-32",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        }
+      ]
+    },
+    {
+      "categorySlug": "cat-5",
+      "slug": "occ-33",
+      "name": "브랜드 매니저",
+      "summary": "(DEMO) 브랜드 매니저 직무 테스트용 요약입니다.",
+      "description": "(DEMO placeholder) 실제 공식 데이터가 아닙니다. 마케팅·미디어 분야에서 활동하는 브랜드 매니저 직무에 대한 테스트용 설명입니다.",
+      "skills": [
+        {
+          "slug": "skill-69",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        },
+        {
+          "slug": "skill-84",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        }
+      ],
+      "qualifications": [],
+      "majors": [
+        {
+          "slug": "major-31",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        }
+      ]
+    },
+    {
+      "categorySlug": "cat-5",
+      "slug": "occ-34",
+      "name": "광고 기획자",
+      "summary": "(DEMO) 광고 기획자 직무 테스트용 요약입니다.",
+      "description": "(DEMO placeholder) 실제 공식 데이터가 아닙니다. 마케팅·미디어 분야에서 활동하는 광고 기획자 직무에 대한 테스트용 설명입니다.",
+      "skills": [
+        {
+          "slug": "skill-77",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        }
+      ],
+      "qualifications": [],
+      "majors": [
+        {
+          "slug": "major-32",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        }
+      ]
+    },
+    {
+      "categorySlug": "cat-5",
+      "slug": "occ-35",
+      "name": "PR 담당자",
+      "summary": "(DEMO) PR 담당자 직무 테스트용 요약입니다.",
+      "description": "(DEMO placeholder) 실제 공식 데이터가 아닙니다. 마케팅·미디어 분야에서 활동하는 PR 담당자 직무에 대한 테스트용 설명입니다.",
+      "skills": [
+        {
+          "slug": "skill-85",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        },
+        {
+          "slug": "skill-92",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        }
+      ],
+      "qualifications": [],
+      "majors": [
+        {
+          "slug": "major-33",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        }
+      ]
+    },
+    {
+      "categorySlug": "cat-5",
+      "slug": "occ-36",
+      "name": "방송 PD",
+      "summary": "(DEMO) 방송 PD 직무 테스트용 요약입니다.",
+      "description": "(DEMO placeholder) 실제 공식 데이터가 아닙니다. 마케팅·미디어 분야에서 활동하는 방송 PD 직무에 대한 테스트용 설명입니다.",
+      "skills": [
+        {
+          "slug": "skill-105",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        },
+        {
+          "slug": "skill-107",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        }
+      ],
+      "qualifications": [],
+      "majors": [
+        {
+          "slug": "major-34",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        }
+      ]
+    },
+    {
+      "categorySlug": "cat-5",
+      "slug": "occ-37",
+      "name": "기자",
+      "summary": "(DEMO) 기자 직무 테스트용 요약입니다.",
+      "description": "(DEMO placeholder) 실제 공식 데이터가 아닙니다. 마케팅·미디어 분야에서 활동하는 기자 직무에 대한 테스트용 설명입니다.",
+      "skills": [
+        {
+          "slug": "skill-85",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        }
+      ],
+      "qualifications": [],
+      "majors": [
+        {
+          "slug": "major-34",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        }
+      ]
+    },
+    {
+      "categorySlug": "cat-5",
+      "slug": "occ-38",
+      "name": "영상 편집자",
+      "summary": "(DEMO) 영상 편집자 직무 테스트용 요약입니다.",
+      "description": "(DEMO placeholder) 실제 공식 데이터가 아닙니다. 마케팅·미디어 분야에서 활동하는 영상 편집자 직무에 대한 테스트용 설명입니다.",
+      "skills": [
+        {
+          "slug": "skill-105",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        },
+        {
+          "slug": "skill-62",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        }
+      ],
+      "qualifications": [
+        {
+          "slug": "qual-93",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        }
+      ],
+      "majors": [
+        {
+          "slug": "major-40",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        }
+      ]
+    },
+    {
+      "categorySlug": "cat-6",
+      "slug": "occ-39",
+      "name": "초등학교 교사",
+      "summary": "(DEMO) 초등학교 교사 직무 테스트용 요약입니다.",
+      "description": "(DEMO placeholder) 실제 공식 데이터가 아닙니다. 교육 분야에서 활동하는 초등학교 교사 직무에 대한 테스트용 설명입니다.",
+      "skills": [
+        {
+          "slug": "skill-119",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        },
+        {
+          "slug": "skill-92",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        }
+      ],
+      "qualifications": [],
+      "majors": [
+        {
+          "slug": "major-69",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        }
+      ]
+    },
+    {
+      "categorySlug": "cat-6",
+      "slug": "occ-40",
+      "name": "중등 영어교사",
+      "summary": "(DEMO) 중등 영어교사 직무 테스트용 요약입니다.",
+      "description": "(DEMO placeholder) 실제 공식 데이터가 아닙니다. 교육 분야에서 활동하는 중등 영어교사 직무에 대한 테스트용 설명입니다.",
+      "skills": [
+        {
+          "slug": "skill-93",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        },
+        {
+          "slug": "skill-119",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        }
+      ],
+      "qualifications": [],
+      "majors": [
+        {
+          "slug": "major-72",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        }
+      ]
+    },
+    {
+      "categorySlug": "cat-6",
+      "slug": "occ-41",
+      "name": "유치원 교사",
+      "summary": "(DEMO) 유치원 교사 직무 테스트용 요약입니다.",
+      "description": "(DEMO placeholder) 실제 공식 데이터가 아닙니다. 교육 분야에서 활동하는 유치원 교사 직무에 대한 테스트용 설명입니다.",
+      "skills": [
+        {
+          "slug": "skill-118",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        }
+      ],
+      "qualifications": [
+        {
+          "slug": "qual-78",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        }
+      ],
+      "majors": [
+        {
+          "slug": "major-68",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        }
+      ]
+    },
+    {
+      "categorySlug": "cat-6",
+      "slug": "occ-42",
+      "name": "특수교사",
+      "summary": "(DEMO) 특수교사 직무 테스트용 요약입니다.",
+      "description": "(DEMO placeholder) 실제 공식 데이터가 아닙니다. 교육 분야에서 활동하는 특수교사 직무에 대한 테스트용 설명입니다.",
+      "skills": [
+        {
+          "slug": "skill-110",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        }
+      ],
+      "qualifications": [
+        {
+          "slug": "qual-80",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        }
+      ],
+      "majors": [
+        {
+          "slug": "major-70",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        }
+      ]
+    },
+    {
+      "categorySlug": "cat-6",
+      "slug": "occ-43",
+      "name": "직업상담사",
+      "summary": "(DEMO) 직업상담사 직무 테스트용 요약입니다.",
+      "description": "(DEMO placeholder) 실제 공식 데이터가 아닙니다. 교육 분야에서 활동하는 직업상담사 직무에 대한 테스트용 설명입니다.",
+      "skills": [],
+      "qualifications": [
+        {
+          "slug": "qual-76",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        }
+      ],
+      "majors": [
+        {
+          "slug": "major-66",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        }
+      ]
+    },
+    {
+      "categorySlug": "cat-6",
+      "slug": "occ-44",
+      "name": "입시 컨설턴트",
+      "summary": "(DEMO) 입시 컨설턴트 직무 테스트용 요약입니다.",
+      "description": "(DEMO placeholder) 실제 공식 데이터가 아닙니다. 교육 분야에서 활동하는 입시 컨설턴트 직무에 대한 테스트용 설명입니다.",
+      "skills": [
+        {
+          "slug": "skill-85",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        }
+      ],
+      "qualifications": [],
+      "majors": [
+        {
+          "slug": "major-67",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        }
+      ]
+    },
+    {
+      "categorySlug": "cat-6",
+      "slug": "occ-45",
+      "name": "평생교육사",
+      "summary": "(DEMO) 평생교육사 직무 테스트용 요약입니다.",
+      "description": "(DEMO placeholder) 실제 공식 데이터가 아닙니다. 교육 분야에서 활동하는 평생교육사 직무에 대한 테스트용 설명입니다.",
+      "skills": [
+        {
+          "slug": "skill-118",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        }
+      ],
+      "qualifications": [],
+      "majors": [
+        {
+          "slug": "major-67",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        }
+      ]
+    },
+    {
+      "categorySlug": "cat-7",
+      "slug": "occ-46",
+      "name": "간호사",
+      "summary": "(DEMO) 간호사 직무 테스트용 요약입니다.",
+      "description": "(DEMO placeholder) 실제 공식 데이터가 아닙니다. 의료·보건 분야에서 활동하는 간호사 직무에 대한 테스트용 설명입니다.",
+      "skills": [
+        {
+          "slug": "skill-108",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        },
+        {
+          "slug": "skill-109",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        }
+      ],
+      "qualifications": [],
+      "majors": [
+        {
+          "slug": "major-52",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        }
+      ]
+    },
+    {
+      "categorySlug": "cat-7",
+      "slug": "occ-47",
+      "name": "물리치료사",
+      "summary": "(DEMO) 물리치료사 직무 테스트용 요약입니다.",
+      "description": "(DEMO placeholder) 실제 공식 데이터가 아닙니다. 의료·보건 분야에서 활동하는 물리치료사 직무에 대한 테스트용 설명입니다.",
+      "skills": [
+        {
+          "slug": "skill-108",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        }
+      ],
+      "qualifications": [
+        {
+          "slug": "qual-70",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        }
+      ],
+      "majors": [
+        {
+          "slug": "major-57",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        }
+      ]
+    },
+    {
+      "categorySlug": "cat-7",
+      "slug": "occ-48",
+      "name": "임상병리사",
+      "summary": "(DEMO) 임상병리사 직무 테스트용 요약입니다.",
+      "description": "(DEMO placeholder) 실제 공식 데이터가 아닙니다. 의료·보건 분야에서 활동하는 임상병리사 직무에 대한 테스트용 설명입니다.",
+      "skills": [
+        {
+          "slug": "skill-120",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        }
+      ],
+      "qualifications": [
+        {
+          "slug": "qual-68",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        }
+      ],
+      "majors": [
+        {
+          "slug": "major-59",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        }
+      ]
+    },
+    {
+      "categorySlug": "cat-7",
+      "slug": "occ-49",
+      "name": "방사선사",
+      "summary": "(DEMO) 방사선사 직무 테스트용 요약입니다.",
+      "description": "(DEMO placeholder) 실제 공식 데이터가 아닙니다. 의료·보건 분야에서 활동하는 방사선사 직무에 대한 테스트용 설명입니다.",
+      "skills": [
+        {
+          "slug": "skill-120",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        }
+      ],
+      "qualifications": [
+        {
+          "slug": "qual-69",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        }
+      ],
+      "majors": [
+        {
+          "slug": "major-60",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        }
+      ]
+    },
+    {
+      "categorySlug": "cat-7",
+      "slug": "occ-50",
+      "name": "약사",
+      "summary": "(DEMO) 약사 직무 테스트용 요약입니다.",
+      "description": "(DEMO placeholder) 실제 공식 데이터가 아닙니다. 의료·보건 분야에서 활동하는 약사 직무에 대한 테스트용 설명입니다.",
+      "skills": [
+        {
+          "slug": "skill-120",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        }
+      ],
+      "qualifications": [],
+      "majors": [
+        {
+          "slug": "major-56",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        }
+      ]
+    },
+    {
+      "categorySlug": "cat-7",
+      "slug": "occ-51",
+      "name": "영양사",
+      "summary": "(DEMO) 영양사 직무 테스트용 요약입니다.",
+      "description": "(DEMO placeholder) 실제 공식 데이터가 아닙니다. 의료·보건 분야에서 활동하는 영양사 직무에 대한 테스트용 설명입니다.",
+      "skills": [],
+      "qualifications": [],
+      "majors": [
+        {
+          "slug": "major-81",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        }
+      ]
+    },
+    {
+      "categorySlug": "cat-7",
+      "slug": "occ-52",
+      "name": "사회복지사",
+      "summary": "(DEMO) 사회복지사 직무 테스트용 요약입니다.",
+      "description": "(DEMO placeholder) 실제 공식 데이터가 아닙니다. 의료·보건 분야에서 활동하는 사회복지사 직무에 대한 테스트용 설명입니다.",
+      "skills": [
+        {
+          "slug": "skill-110",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        }
+      ],
+      "qualifications": [
+        {
+          "slug": "qual-74",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        }
+      ],
+      "majors": [
+        {
+          "slug": "major-62",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        }
+      ]
+    },
+    {
+      "categorySlug": "cat-7",
+      "slug": "occ-53",
+      "name": "임상심리사",
+      "summary": "(DEMO) 임상심리사 직무 테스트용 요약입니다.",
+      "description": "(DEMO placeholder) 실제 공식 데이터가 아닙니다. 의료·보건 분야에서 활동하는 임상심리사 직무에 대한 테스트용 설명입니다.",
+      "skills": [
+        {
+          "slug": "skill-110",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        }
+      ],
+      "qualifications": [],
+      "majors": [
+        {
+          "slug": "major-63",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        }
+      ]
+    },
+    {
+      "categorySlug": "cat-7",
+      "slug": "occ-54",
+      "name": "응급구조사",
+      "summary": "(DEMO) 응급구조사 직무 테스트용 요약입니다.",
+      "description": "(DEMO placeholder) 실제 공식 데이터가 아닙니다. 의료·보건 분야에서 활동하는 응급구조사 직무에 대한 테스트용 설명입니다.",
+      "skills": [
+        {
+          "slug": "skill-109",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        }
+      ],
+      "qualifications": [],
+      "majors": [
+        {
+          "slug": "major-61",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        }
+      ]
+    },
+    {
+      "categorySlug": "cat-8",
+      "slug": "occ-55",
+      "name": "기계설계 엔지니어",
+      "summary": "(DEMO) 기계설계 엔지니어 직무 테스트용 요약입니다.",
+      "description": "(DEMO placeholder) 실제 공식 데이터가 아닙니다. 제조·엔지니어링 분야에서 활동하는 기계설계 엔지니어 직무에 대한 테스트용 설명입니다.",
+      "skills": [
+        {
+          "slug": "skill-98",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        }
+      ],
+      "qualifications": [
+        {
+          "slug": "qual-29",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        }
+      ],
+      "majors": [
+        {
+          "slug": "major-6",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        }
+      ]
+    },
+    {
+      "categorySlug": "cat-8",
+      "slug": "occ-56",
+      "name": "전기 엔지니어",
+      "summary": "(DEMO) 전기 엔지니어 직무 테스트용 요약입니다.",
+      "description": "(DEMO placeholder) 실제 공식 데이터가 아닙니다. 제조·엔지니어링 분야에서 활동하는 전기 엔지니어 직무에 대한 테스트용 설명입니다.",
+      "skills": [
+        {
+          "slug": "skill-97",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        },
+        {
+          "slug": "skill-100",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        }
+      ],
+      "qualifications": [
+        {
+          "slug": "qual-23",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        }
+      ],
+      "majors": [
+        {
+          "slug": "major-5",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        }
+      ]
+    },
+    {
+      "categorySlug": "cat-8",
+      "slug": "occ-57",
+      "name": "품질관리 엔지니어",
+      "summary": "(DEMO) 품질관리 엔지니어 직무 테스트용 요약입니다.",
+      "description": "(DEMO placeholder) 실제 공식 데이터가 아닙니다. 제조·엔지니어링 분야에서 활동하는 품질관리 엔지니어 직무에 대한 테스트용 설명입니다.",
+      "skills": [
+        {
+          "slug": "skill-113",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        }
+      ],
+      "qualifications": [
+        {
+          "slug": "qual-30",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        }
+      ],
+      "majors": [
+        {
+          "slug": "major-7",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        }
+      ]
+    },
+    {
+      "categorySlug": "cat-8",
+      "slug": "occ-58",
+      "name": "생산관리자",
+      "summary": "(DEMO) 생산관리자 직무 테스트용 요약입니다.",
+      "description": "(DEMO placeholder) 실제 공식 데이터가 아닙니다. 제조·엔지니어링 분야에서 활동하는 생산관리자 직무에 대한 테스트용 설명입니다.",
+      "skills": [
+        {
+          "slug": "skill-114",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        }
+      ],
+      "qualifications": [],
+      "majors": [
+        {
+          "slug": "major-7",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        }
+      ]
+    },
+    {
+      "categorySlug": "cat-8",
+      "slug": "occ-59",
+      "name": "자동차 정비사",
+      "summary": "(DEMO) 자동차 정비사 직무 테스트용 요약입니다.",
+      "description": "(DEMO placeholder) 실제 공식 데이터가 아닙니다. 제조·엔지니어링 분야에서 활동하는 자동차 정비사 직무에 대한 테스트용 설명입니다.",
+      "skills": [
+        {
+          "slug": "skill-99",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        }
+      ],
+      "qualifications": [
+        {
+          "slug": "qual-34",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        }
+      ],
+      "majors": [
+        {
+          "slug": "major-6",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        }
+      ]
+    },
+    {
+      "categorySlug": "cat-8",
+      "slug": "occ-60",
+      "name": "용접기술자",
+      "summary": "(DEMO) 용접기술자 직무 테스트용 요약입니다.",
+      "description": "(DEMO placeholder) 실제 공식 데이터가 아닙니다. 제조·엔지니어링 분야에서 활동하는 용접기술자 직무에 대한 테스트용 설명입니다.",
+      "skills": [
+        {
+          "slug": "skill-99",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        }
+      ],
+      "qualifications": [
+        {
+          "slug": "qual-32",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        }
+      ],
+      "majors": [
+        {
+          "slug": "major-6",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        }
+      ]
+    },
+    {
+      "categorySlug": "cat-8",
+      "slug": "occ-61",
+      "name": "화학 엔지니어",
+      "summary": "(DEMO) 화학 엔지니어 직무 테스트용 요약입니다.",
+      "description": "(DEMO placeholder) 실제 공식 데이터가 아닙니다. 제조·엔지니어링 분야에서 활동하는 화학 엔지니어 직무에 대한 테스트용 설명입니다.",
+      "skills": [
+        {
+          "slug": "skill-120",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        }
+      ],
+      "qualifications": [
+        {
+          "slug": "qual-31",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        }
+      ],
+      "majors": [
+        {
+          "slug": "major-8",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        }
+      ]
+    },
+    {
+      "categorySlug": "cat-8",
+      "slug": "occ-62",
+      "name": "로봇공학 엔지니어",
+      "summary": "(DEMO) 로봇공학 엔지니어 직무 테스트용 요약입니다.",
+      "description": "(DEMO placeholder) 실제 공식 데이터가 아닙니다. 제조·엔지니어링 분야에서 활동하는 로봇공학 엔지니어 직무에 대한 테스트용 설명입니다.",
+      "skills": [
+        {
+          "slug": "skill-97",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        },
+        {
+          "slug": "skill-5",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        }
+      ],
+      "qualifications": [],
+      "majors": [
+        {
+          "slug": "major-14",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        }
+      ]
+    },
+    {
+      "categorySlug": "cat-8",
+      "slug": "occ-63",
+      "name": "항공정비사",
+      "summary": "(DEMO) 항공정비사 직무 테스트용 요약입니다.",
+      "description": "(DEMO placeholder) 실제 공식 데이터가 아닙니다. 제조·엔지니어링 분야에서 활동하는 항공정비사 직무에 대한 테스트용 설명입니다.",
+      "skills": [
+        {
+          "slug": "skill-113",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        }
+      ],
+      "qualifications": [],
+      "majors": [
+        {
+          "slug": "major-15",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        }
+      ]
+    },
+    {
+      "categorySlug": "cat-8",
+      "slug": "occ-64",
+      "name": "조선 설계 엔지니어",
+      "summary": "(DEMO) 조선 설계 엔지니어 직무 테스트용 요약입니다.",
+      "description": "(DEMO placeholder) 실제 공식 데이터가 아닙니다. 제조·엔지니어링 분야에서 활동하는 조선 설계 엔지니어 직무에 대한 테스트용 설명입니다.",
+      "skills": [
+        {
+          "slug": "skill-98",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        }
+      ],
+      "qualifications": [],
+      "majors": [
+        {
+          "slug": "major-16",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        }
+      ]
+    },
+    {
+      "categorySlug": "cat-9",
+      "slug": "occ-65",
+      "name": "건축설계사",
+      "summary": "(DEMO) 건축설계사 직무 테스트용 요약입니다.",
+      "description": "(DEMO placeholder) 실제 공식 데이터가 아닙니다. 건설·환경 분야에서 활동하는 건축설계사 직무에 대한 테스트용 설명입니다.",
+      "skills": [
+        {
+          "slug": "skill-98",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        }
+      ],
+      "qualifications": [
+        {
+          "slug": "qual-27",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        }
+      ],
+      "majors": [
+        {
+          "slug": "major-11",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        }
+      ]
+    },
+    {
+      "categorySlug": "cat-9",
+      "slug": "occ-66",
+      "name": "토목 엔지니어",
+      "summary": "(DEMO) 토목 엔지니어 직무 테스트용 요약입니다.",
+      "description": "(DEMO placeholder) 실제 공식 데이터가 아닙니다. 건설·환경 분야에서 활동하는 토목 엔지니어 직무에 대한 테스트용 설명입니다.",
+      "skills": [
+        {
+          "slug": "skill-98",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        }
+      ],
+      "qualifications": [
+        {
+          "slug": "qual-28",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        }
+      ],
+      "majors": [
+        {
+          "slug": "major-12",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        }
+      ]
+    },
+    {
+      "categorySlug": "cat-9",
+      "slug": "occ-67",
+      "name": "환경 엔지니어",
+      "summary": "(DEMO) 환경 엔지니어 직무 테스트용 요약입니다.",
+      "description": "(DEMO placeholder) 실제 공식 데이터가 아닙니다. 건설·환경 분야에서 활동하는 환경 엔지니어 직무에 대한 테스트용 설명입니다.",
+      "skills": [
+        {
+          "slug": "skill-120",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        }
+      ],
+      "qualifications": [
+        {
+          "slug": "qual-85",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        }
+      ],
+      "majors": [
+        {
+          "slug": "major-13",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        }
+      ]
+    },
+    {
+      "categorySlug": "cat-9",
+      "slug": "occ-68",
+      "name": "조경 설계사",
+      "summary": "(DEMO) 조경 설계사 직무 테스트용 요약입니다.",
+      "description": "(DEMO placeholder) 실제 공식 데이터가 아닙니다. 건설·환경 분야에서 활동하는 조경 설계사 직무에 대한 테스트용 설명입니다.",
+      "skills": [
+        {
+          "slug": "skill-98",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        }
+      ],
+      "qualifications": [
+        {
+          "slug": "qual-83",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        }
+      ],
+      "majors": [
+        {
+          "slug": "major-11",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        }
+      ]
+    },
+    {
+      "categorySlug": "cat-9",
+      "slug": "occ-69",
+      "name": "소방 안전관리자",
+      "summary": "(DEMO) 소방 안전관리자 직무 테스트용 요약입니다.",
+      "description": "(DEMO placeholder) 실제 공식 데이터가 아닙니다. 건설·환경 분야에서 활동하는 소방 안전관리자 직무에 대한 테스트용 설명입니다.",
+      "skills": [
+        {
+          "slug": "skill-113",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        }
+      ],
+      "qualifications": [
+        {
+          "slug": "qual-26",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        }
+      ],
+      "majors": [
+        {
+          "slug": "major-10",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        }
+      ]
+    },
+    {
+      "categorySlug": "cat-9",
+      "slug": "occ-70",
+      "name": "신재생에너지 엔지니어",
+      "summary": "(DEMO) 신재생에너지 엔지니어 직무 테스트용 요약입니다.",
+      "description": "(DEMO placeholder) 실제 공식 데이터가 아닙니다. 건설·환경 분야에서 활동하는 신재생에너지 엔지니어 직무에 대한 테스트용 설명입니다.",
+      "skills": [
+        {
+          "slug": "skill-97",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        }
+      ],
+      "qualifications": [
+        {
+          "slug": "qual-89",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        }
+      ],
+      "majors": [
+        {
+          "slug": "major-17",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        }
+      ]
+    },
+    {
+      "categorySlug": "cat-9",
+      "slug": "occ-71",
+      "name": "도시계획가",
+      "summary": "(DEMO) 도시계획가 직무 테스트용 요약입니다.",
+      "description": "(DEMO placeholder) 실제 공식 데이터가 아닙니다. 건설·환경 분야에서 활동하는 도시계획가 직무에 대한 테스트용 설명입니다.",
+      "skills": [
+        {
+          "slug": "skill-84",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        }
+      ],
+      "qualifications": [],
+      "majors": [
+        {
+          "slug": "major-11",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        }
+      ]
+    },
+    {
+      "categorySlug": "cat-9",
+      "slug": "occ-72",
+      "name": "조경관리사",
+      "summary": "(DEMO) 조경관리사 직무 테스트용 요약입니다.",
+      "description": "(DEMO placeholder) 실제 공식 데이터가 아닙니다. 건설·환경 분야에서 활동하는 조경관리사 직무에 대한 테스트용 설명입니다.",
+      "skills": [
+        {
+          "slug": "skill-113",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        }
+      ],
+      "qualifications": [
+        {
+          "slug": "qual-84",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        }
+      ],
+      "majors": []
+    },
+    {
+      "categorySlug": "cat-10",
+      "slug": "occ-73",
+      "name": "음악가",
+      "summary": "(DEMO) 음악가 직무 테스트용 요약입니다.",
+      "description": "(DEMO placeholder) 실제 공식 데이터가 아닙니다. 문화·예술 분야에서 활동하는 음악가 직무에 대한 테스트용 설명입니다.",
+      "skills": [
+        {
+          "slug": "skill-106",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        }
+      ],
+      "qualifications": [],
+      "majors": [
+        {
+          "slug": "major-44",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        }
+      ]
+    },
+    {
+      "categorySlug": "cat-10",
+      "slug": "occ-74",
+      "name": "작곡가",
+      "summary": "(DEMO) 작곡가 직무 테스트용 요약입니다.",
+      "description": "(DEMO placeholder) 실제 공식 데이터가 아닙니다. 문화·예술 분야에서 활동하는 작곡가 직무에 대한 테스트용 설명입니다.",
+      "skills": [
+        {
+          "slug": "skill-106",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        }
+      ],
+      "qualifications": [],
+      "majors": [
+        {
+          "slug": "major-45",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        }
+      ]
+    },
+    {
+      "categorySlug": "cat-10",
+      "slug": "occ-75",
+      "name": "배우",
+      "summary": "(DEMO) 배우 직무 테스트용 요약입니다.",
+      "description": "(DEMO placeholder) 실제 공식 데이터가 아닙니다. 문화·예술 분야에서 활동하는 배우 직무에 대한 테스트용 설명입니다.",
+      "skills": [
+        {
+          "slug": "skill-107",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        }
+      ],
+      "qualifications": [],
+      "majors": [
+        {
+          "slug": "major-48",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        }
+      ]
+    },
+    {
+      "categorySlug": "cat-10",
+      "slug": "occ-76",
+      "name": "무용가",
+      "summary": "(DEMO) 무용가 직무 테스트용 요약입니다.",
+      "description": "(DEMO placeholder) 실제 공식 데이터가 아닙니다. 문화·예술 분야에서 활동하는 무용가 직무에 대한 테스트용 설명입니다.",
+      "skills": [
+        {
+          "slug": "skill-107",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        }
+      ],
+      "qualifications": [],
+      "majors": [
+        {
+          "slug": "major-49",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        }
+      ]
+    },
+    {
+      "categorySlug": "cat-10",
+      "slug": "occ-77",
+      "name": "사진작가",
+      "summary": "(DEMO) 사진작가 직무 테스트용 요약입니다.",
+      "description": "(DEMO placeholder) 실제 공식 데이터가 아닙니다. 문화·예술 분야에서 활동하는 사진작가 직무에 대한 테스트용 설명입니다.",
+      "skills": [
+        {
+          "slug": "skill-104",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        }
+      ],
+      "qualifications": [],
+      "majors": [
+        {
+          "slug": "major-36",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        }
+      ]
+    },
+    {
+      "categorySlug": "cat-10",
+      "slug": "occ-78",
+      "name": "큐레이터",
+      "summary": "(DEMO) 큐레이터 직무 테스트용 요약입니다.",
+      "description": "(DEMO placeholder) 실제 공식 데이터가 아닙니다. 문화·예술 분야에서 활동하는 큐레이터 직무에 대한 테스트용 설명입니다.",
+      "skills": [
+        {
+          "slug": "skill-84",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        }
+      ],
+      "qualifications": [],
+      "majors": [
+        {
+          "slug": "major-42",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        }
+      ]
+    },
+    {
+      "categorySlug": "cat-10",
+      "slug": "occ-79",
+      "name": "방송작가",
+      "summary": "(DEMO) 방송작가 직무 테스트용 요약입니다.",
+      "description": "(DEMO placeholder) 실제 공식 데이터가 아닙니다. 문화·예술 분야에서 활동하는 방송작가 직무에 대한 테스트용 설명입니다.",
+      "skills": [
+        {
+          "slug": "skill-77",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        }
+      ],
+      "qualifications": [],
+      "majors": [
+        {
+          "slug": "major-34",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        }
+      ]
+    },
+    {
+      "categorySlug": "cat-10",
+      "slug": "occ-80",
+      "name": "공연 기획자",
+      "summary": "(DEMO) 공연 기획자 직무 테스트용 요약입니다.",
+      "description": "(DEMO placeholder) 실제 공식 데이터가 아닙니다. 문화·예술 분야에서 활동하는 공연 기획자 직무에 대한 테스트용 설명입니다.",
+      "skills": [
+        {
+          "slug": "skill-107",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        },
+        {
+          "slug": "skill-78",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        }
+      ],
+      "qualifications": [],
+      "majors": [
+        {
+          "slug": "major-48",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        }
+      ]
+    },
+    {
+      "categorySlug": "cat-10",
+      "slug": "occ-81",
+      "name": "제과제빵사",
+      "summary": "(DEMO) 제과제빵사 직무 테스트용 요약입니다.",
+      "description": "(DEMO placeholder) 실제 공식 데이터가 아닙니다. 문화·예술 분야에서 활동하는 제과제빵사 직무에 대한 테스트용 설명입니다.",
+      "skills": [
+        {
+          "slug": "skill-102",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        }
+      ],
+      "qualifications": [
+        {
+          "slug": "qual-38",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        }
+      ],
+      "majors": [
+        {
+          "slug": "major-81",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        }
+      ]
+    },
+    {
+      "categorySlug": "cat-10",
+      "slug": "occ-82",
+      "name": "바리스타",
+      "summary": "(DEMO) 바리스타 직무 테스트용 요약입니다.",
+      "description": "(DEMO placeholder) 실제 공식 데이터가 아닙니다. 문화·예술 분야에서 활동하는 바리스타 직무에 대한 테스트용 설명입니다.",
+      "skills": [
+        {
+          "slug": "skill-103",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        }
+      ],
+      "qualifications": [
+        {
+          "slug": "qual-37",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        }
+      ],
+      "majors": [
+        {
+          "slug": "major-83",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        }
+      ]
+    },
+    {
+      "categorySlug": "cat-10",
+      "slug": "occ-83",
+      "name": "조리사",
+      "summary": "(DEMO) 조리사 직무 테스트용 요약입니다.",
+      "description": "(DEMO placeholder) 실제 공식 데이터가 아닙니다. 문화·예술 분야에서 활동하는 조리사 직무에 대한 테스트용 설명입니다.",
+      "skills": [
+        {
+          "slug": "skill-102",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        }
+      ],
+      "qualifications": [
+        {
+          "slug": "qual-35",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        }
+      ],
+      "majors": [
+        {
+          "slug": "major-82",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        }
+      ]
+    },
+    {
+      "categorySlug": "cat-10",
+      "slug": "occ-84",
+      "name": "호텔리어",
+      "summary": "(DEMO) 호텔리어 직무 테스트용 요약입니다.",
+      "description": "(DEMO placeholder) 실제 공식 데이터가 아닙니다. 문화·예술 분야에서 활동하는 호텔리어 직무에 대한 테스트용 설명입니다.",
+      "skills": [
+        {
+          "slug": "skill-117",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        }
+      ],
+      "qualifications": [],
+      "majors": [
+        {
+          "slug": "major-85",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        }
+      ]
+    },
+    {
+      "categorySlug": "cat-10",
+      "slug": "occ-85",
+      "name": "여행 플래너",
+      "summary": "(DEMO) 여행 플래너 직무 테스트용 요약입니다.",
+      "description": "(DEMO placeholder) 실제 공식 데이터가 아닙니다. 문화·예술 분야에서 활동하는 여행 플래너 직무에 대한 테스트용 설명입니다.",
+      "skills": [
+        {
+          "slug": "skill-84",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        }
+      ],
+      "qualifications": [
+        {
+          "slug": "qual-47",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        }
+      ],
+      "majors": [
+        {
+          "slug": "major-84",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        }
+      ]
+    },
+    {
+      "categorySlug": "cat-10",
+      "slug": "occ-86",
+      "name": "항공 승무원",
+      "summary": "(DEMO) 항공 승무원 직무 테스트용 요약입니다.",
+      "description": "(DEMO placeholder) 실제 공식 데이터가 아닙니다. 문화·예술 분야에서 활동하는 항공 승무원 직무에 대한 테스트용 설명입니다.",
+      "skills": [
+        {
+          "slug": "skill-85",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        },
+        {
+          "slug": "skill-93",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        }
+      ],
+      "qualifications": [],
+      "majors": [
+        {
+          "slug": "major-86",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        }
+      ]
+    },
+    {
+      "categorySlug": "cat-10",
+      "slug": "occ-87",
+      "name": "플로리스트",
+      "summary": "(DEMO) 플로리스트 직무 테스트용 요약입니다.",
+      "description": "(DEMO placeholder) 실제 공식 데이터가 아닙니다. 문화·예술 분야에서 활동하는 플로리스트 직무에 대한 테스트용 설명입니다.",
+      "skills": [],
+      "qualifications": [
+        {
+          "slug": "qual-109",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        }
+      ],
+      "majors": []
+    },
+    {
+      "categorySlug": "cat-10",
+      "slug": "occ-88",
+      "name": "헤어디자이너",
+      "summary": "(DEMO) 헤어디자이너 직무 테스트용 요약입니다.",
+      "description": "(DEMO placeholder) 실제 공식 데이터가 아닙니다. 문화·예술 분야에서 활동하는 헤어디자이너 직무에 대한 테스트용 설명입니다.",
+      "skills": [],
+      "qualifications": [
+        {
+          "slug": "qual-105",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        }
+      ],
+      "majors": [
+        {
+          "slug": "major-38",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        }
+      ]
+    },
+    {
+      "categorySlug": "cat-10",
+      "slug": "occ-89",
+      "name": "메이크업 아티스트",
+      "summary": "(DEMO) 메이크업 아티스트 직무 테스트용 요약입니다.",
+      "description": "(DEMO placeholder) 실제 공식 데이터가 아닙니다. 문화·예술 분야에서 활동하는 메이크업 아티스트 직무에 대한 테스트용 설명입니다.",
+      "skills": [],
+      "qualifications": [
+        {
+          "slug": "qual-107",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        }
+      ],
+      "majors": [
+        {
+          "slug": "major-38",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        }
+      ]
+    },
+    {
+      "categorySlug": "cat-10",
+      "slug": "occ-90",
+      "name": "네일 아티스트",
+      "summary": "(DEMO) 네일 아티스트 직무 테스트용 요약입니다.",
+      "description": "(DEMO placeholder) 실제 공식 데이터가 아닙니다. 문화·예술 분야에서 활동하는 네일 아티스트 직무에 대한 테스트용 설명입니다.",
+      "skills": [],
+      "qualifications": [
+        {
+          "slug": "qual-108",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        }
+      ],
+      "majors": [
+        {
+          "slug": "major-38",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        }
+      ]
+    },
+    {
+      "categorySlug": "cat-1",
+      "slug": "occ-91",
+      "name": "게임 기획자",
+      "summary": "(DEMO) 게임 기획자 직무 테스트용 요약입니다.",
+      "description": "(DEMO placeholder) 실제 공식 데이터가 아닙니다. IT·개발 분야에서 활동하는 게임 기획자 직무에 대한 테스트용 설명입니다.",
+      "skills": [],
+      "qualifications": [
+        {
+          "slug": "qual-94",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        }
+      ],
+      "majors": [
+        {
+          "slug": "major-22",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        }
+      ]
+    },
+    {
+      "categorySlug": "cat-1",
+      "slug": "occ-92",
+      "name": "게임 그래픽 디자이너",
+      "summary": "(DEMO) 게임 그래픽 디자이너 직무 테스트용 요약입니다.",
+      "description": "(DEMO placeholder) 실제 공식 데이터가 아닙니다. IT·개발 분야에서 활동하는 게임 그래픽 디자이너 직무에 대한 테스트용 설명입니다.",
+      "skills": [
+        {
+          "slug": "skill-70",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        },
+        {
+          "slug": "skill-63",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        }
+      ],
+      "qualifications": [
+        {
+          "slug": "qual-95",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        }
+      ],
+      "majors": [
+        {
+          "slug": "major-22",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        }
+      ]
+    },
+    {
+      "categorySlug": "cat-1",
+      "slug": "occ-93",
+      "name": "웹퍼블리셔",
+      "summary": "(DEMO) 웹퍼블리셔 직무 테스트용 요약입니다.",
+      "description": "(DEMO placeholder) 실제 공식 데이터가 아닙니다. IT·개발 분야에서 활동하는 웹퍼블리셔 직무에 대한 테스트용 설명입니다.",
+      "skills": [
+        {
+          "slug": "javascript",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        },
+        {
+          "slug": "skill-67",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        }
+      ],
+      "qualifications": [
+        {
+          "slug": "qual-18",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        }
+      ],
+      "majors": [
+        {
+          "slug": "major-36",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        }
+      ]
+    },
+    {
+      "categorySlug": "cat-1",
+      "slug": "occ-94",
+      "name": "시스템 엔지니어",
+      "summary": "(DEMO) 시스템 엔지니어 직무 테스트용 요약입니다.",
+      "description": "(DEMO placeholder) 실제 공식 데이터가 아닙니다. IT·개발 분야에서 활동하는 시스템 엔지니어 직무에 대한 테스트용 설명입니다.",
+      "skills": [
+        {
+          "slug": "skill-22",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        }
+      ],
+      "qualifications": [
+        {
+          "slug": "qual-13",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        }
+      ],
+      "majors": [
+        {
+          "slug": "major-3",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        }
+      ]
+    },
+    {
+      "categorySlug": "cat-1",
+      "slug": "occ-95",
+      "name": "네트워크 엔지니어",
+      "summary": "(DEMO) 네트워크 엔지니어 직무 테스트용 요약입니다.",
+      "description": "(DEMO placeholder) 실제 공식 데이터가 아닙니다. IT·개발 분야에서 활동하는 네트워크 엔지니어 직무에 대한 테스트용 설명입니다.",
+      "skills": [],
+      "qualifications": [
+        {
+          "slug": "qual-98",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        }
+      ],
+      "majors": [
+        {
+          "slug": "major-3",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        }
+      ]
+    },
+    {
+      "categorySlug": "cat-1",
+      "slug": "occ-96",
+      "name": "IT 컨설턴트",
+      "summary": "(DEMO) IT 컨설턴트 직무 테스트용 요약입니다.",
+      "description": "(DEMO placeholder) 실제 공식 데이터가 아닙니다. IT·개발 분야에서 활동하는 IT 컨설턴트 직무에 대한 테스트용 설명입니다.",
+      "skills": [
+        {
+          "slug": "skill-78",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        }
+      ],
+      "qualifications": [
+        {
+          "slug": "qual-96",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        }
+      ],
+      "majors": [
+        {
+          "slug": "major-24",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        }
+      ]
+    },
+    {
+      "categorySlug": "cat-1",
+      "slug": "occ-97",
+      "name": "프로덕트 매니저",
+      "summary": "(DEMO) 프로덕트 매니저 직무 테스트용 요약입니다.",
+      "description": "(DEMO placeholder) 실제 공식 데이터가 아닙니다. IT·개발 분야에서 활동하는 프로덕트 매니저 직무에 대한 테스트용 설명입니다.",
+      "skills": [
+        {
+          "slug": "skill-78",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        },
+        {
+          "slug": "skill-84",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        }
+      ],
+      "qualifications": [],
+      "majors": [
+        {
+          "slug": "major-24",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        }
+      ]
+    },
+    {
+      "categorySlug": "cat-1",
+      "slug": "occ-98",
+      "name": "개발자 관계 매니저",
+      "summary": "(DEMO) 개발자 관계 매니저 직무 테스트용 요약입니다.",
+      "description": "(DEMO placeholder) 실제 공식 데이터가 아닙니다. IT·개발 분야에서 활동하는 개발자 관계 매니저 직무에 대한 테스트용 설명입니다.",
+      "skills": [
+        {
+          "slug": "skill-85",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        }
+      ],
+      "qualifications": [],
+      "majors": [
+        {
+          "slug": "computer-science",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        }
+      ]
+    },
+    {
+      "categorySlug": "cat-1",
+      "slug": "occ-99",
+      "name": "핀테크 개발자",
+      "summary": "(DEMO) 핀테크 개발자 직무 테스트용 요약입니다.",
+      "description": "(DEMO placeholder) 실제 공식 데이터가 아닙니다. IT·개발 분야에서 활동하는 핀테크 개발자 직무에 대한 테스트용 설명입니다.",
+      "skills": [
+        {
+          "slug": "skill-4",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        },
+        {
+          "slug": "skill-30",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        }
+      ],
+      "qualifications": [
+        {
+          "slug": "engineer-info-processing",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        }
+      ],
+      "majors": [
+        {
+          "slug": "computer-science",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        }
+      ]
+    },
+    {
+      "categorySlug": "cat-1",
+      "slug": "occ-100",
+      "name": "임베디드 소프트웨어 개발자",
+      "summary": "(DEMO) 임베디드 소프트웨어 개발자 직무 테스트용 요약입니다.",
+      "description": "(DEMO placeholder) 실제 공식 데이터가 아닙니다. IT·개발 분야에서 활동하는 임베디드 소프트웨어 개발자 직무에 대한 테스트용 설명입니다.",
+      "skills": [
+        {
+          "slug": "skill-5",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        },
+        {
+          "slug": "skill-97",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        }
+      ],
+      "qualifications": [],
+      "majors": [
+        {
+          "slug": "major-4",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        }
+      ]
+    },
+    {
+      "categorySlug": "cat-4",
+      "slug": "occ-101",
+      "name": "공인중개사",
+      "summary": "(DEMO) 공인중개사 직무 테스트용 요약입니다.",
+      "description": "(DEMO placeholder) 실제 공식 데이터가 아닙니다. 경영·비즈니스 분야에서 활동하는 공인중개사 직무에 대한 테스트용 설명입니다.",
+      "skills": [
+        {
+          "slug": "skill-111",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        }
+      ],
+      "qualifications": [
+        {
+          "slug": "qual-46",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        }
+      ],
+      "majors": [
+        {
+          "slug": "major-88",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        }
+      ]
+    },
+    {
+      "categorySlug": "cat-4",
+      "slug": "occ-102",
+      "name": "감정평가사",
+      "summary": "(DEMO) 감정평가사 직무 테스트용 요약입니다.",
+      "description": "(DEMO placeholder) 실제 공식 데이터가 아닙니다. 경영·비즈니스 분야에서 활동하는 감정평가사 직무에 대한 테스트용 설명입니다.",
+      "skills": [
+        {
+          "slug": "skill-74",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        }
+      ],
+      "qualifications": [
+        {
+          "slug": "qual-66",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        }
+      ],
+      "majors": [
+        {
+          "slug": "major-25",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        }
+      ]
+    },
+    {
+      "categorySlug": "cat-4",
+      "slug": "occ-103",
+      "name": "보험계리사",
+      "summary": "(DEMO) 보험계리사 직무 테스트용 요약입니다.",
+      "description": "(DEMO placeholder) 실제 공식 데이터가 아닙니다. 경영·비즈니스 분야에서 활동하는 보험계리사 직무에 대한 테스트용 설명입니다.",
+      "skills": [
+        {
+          "slug": "skill-96",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        }
+      ],
+      "qualifications": [
+        {
+          "slug": "qual-63",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        }
+      ],
+      "majors": [
+        {
+          "slug": "major-78",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        }
+      ]
+    },
+    {
+      "categorySlug": "cat-4",
+      "slug": "occ-104",
+      "name": "손해사정사",
+      "summary": "(DEMO) 손해사정사 직무 테스트용 요약입니다.",
+      "description": "(DEMO placeholder) 실제 공식 데이터가 아닙니다. 경영·비즈니스 분야에서 활동하는 손해사정사 직무에 대한 테스트용 설명입니다.",
+      "skills": [
+        {
+          "slug": "skill-111",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        }
+      ],
+      "qualifications": [
+        {
+          "slug": "qual-62",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        }
+      ],
+      "majors": [
+        {
+          "slug": "major-87",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        }
+      ]
+    },
+    {
+      "categorySlug": "cat-6",
+      "slug": "occ-105",
+      "name": "사서",
+      "summary": "(DEMO) 사서 직무 테스트용 요약입니다.",
+      "description": "(DEMO placeholder) 실제 공식 데이터가 아닙니다. 교육 분야에서 활동하는 사서 직무에 대한 테스트용 설명입니다.",
+      "skills": [],
+      "qualifications": [
+        {
+          "slug": "qual-81",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        }
+      ],
+      "majors": [
+        {
+          "slug": "major-91",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        }
+      ]
+    },
+    {
+      "categorySlug": "cat-10",
+      "slug": "occ-106",
+      "name": "통번역사",
+      "summary": "(DEMO) 통번역사 직무 테스트용 요약입니다.",
+      "description": "(DEMO placeholder) 실제 공식 데이터가 아닙니다. 문화·예술 분야에서 활동하는 통번역사 직무에 대한 테스트용 설명입니다.",
+      "skills": [
+        {
+          "slug": "skill-93",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        },
+        {
+          "slug": "skill-94",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        }
+      ],
+      "qualifications": [
+        {
+          "slug": "qual-48",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        }
+      ],
+      "majors": [
+        {
+          "slug": "major-95",
+          "sourceExternalId": "BULK-DUMMY-source-1"
+        }
+      ]
+    }
+  ]
+}
