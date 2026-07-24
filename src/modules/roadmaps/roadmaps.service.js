@@ -15,6 +15,7 @@ export function createRoadmapsService({
           code: 'OCCUPATION_NOT_FOUND',
         });
       }
+      const skills = await repository.findSkillsByIds(input.currentSkillIds);
       const roadmap = await repository.create({
         userId,
         title: `${occupation.name} 로드맵`,
@@ -25,7 +26,13 @@ export function createRoadmapsService({
         status: 'GENERATING',
       });
       try {
-        await provider.generate(input);
+        const timeline = await provider.generate({
+          grade: input.grade,
+          major: input.major,
+          job: occupation.name,
+          skills: skills.map((skill) => skill.name),
+        });
+        return await repository.complete(roadmap.id, timeline);
       } catch {
         const failed = await repository.markFailed(roadmap.id);
         throw new AppError('로드맵 생성에 실패했습니다.', {
@@ -34,7 +41,6 @@ export function createRoadmapsService({
           details: { roadmapId: failed.id, status: failed.status },
         });
       }
-      return roadmap;
     },
     list: (userId) => repository.list(userId),
     async detail(userId, id) {

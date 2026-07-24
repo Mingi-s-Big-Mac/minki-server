@@ -16,8 +16,42 @@ export function createRoadmapsRepository(prisma = getPrismaClient()) {
         select: { id: true, name: true },
       });
     },
+    findSkillsByIds(ids) {
+      if (!ids?.length) return [];
+      return prisma.skill.findMany({
+        where: { id: { in: ids } },
+        select: { id: true, name: true },
+      });
+    },
     create(data) {
       return prisma.roadmap.create({ data, include: roadmapInclude });
+    },
+    complete(id, semesters) {
+      return prisma.$transaction(async (tx) => {
+        for (const [index, semester] of semesters.entries()) {
+          await tx.roadmapSemester.create({
+            data: {
+              roadmapId: id,
+              semesterOrder: index + 1,
+              title: semester.period,
+              items: {
+                create: semester.items.map((item, itemIndex) => ({
+                  type: item.type,
+                  title: item.title,
+                  sourceId: item.sourceId,
+                  displayOrder: itemIndex,
+                })),
+              },
+            },
+          });
+        }
+
+        return tx.roadmap.update({
+          where: { id },
+          data: { status: 'COMPLETED' },
+          include: roadmapInclude,
+        });
+      });
     },
     markFailed(id) {
       return prisma.roadmap.update({

@@ -41,7 +41,7 @@ const envSchema = z.object({
     (value) => (value === '' ? undefined : value),
     z.string().optional(),
   ),
-  AI_SERVICE_TIMEOUT_MS: z.coerce.number().int().min(100).max(60000).default(5000),
+  AI_SERVICE_TIMEOUT_MS: z.coerce.number().int().min(100).max(120000).default(90000),
 });
 
 export class EnvironmentValidationError extends Error {

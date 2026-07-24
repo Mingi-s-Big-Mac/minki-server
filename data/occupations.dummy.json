@@ -1,0 +1,88 @@
+{
+  "_note": "TEST/DEMO placeholder data for frontend integration testing only. NOT sourced from an official database — do not present as real official occupation data. Replace with data from NCS/워크넷/커리어넷 before any real demo that relies on data accuracy.",
+  "sources": [
+    {
+      "externalId": "DUMMY-source-1",
+      "organization": "DEMO placeholder (not an official source)",
+      "title": "DEMO placeholder data for testing",
+      "url": "https://example.com/demo-placeholder",
+      "accessedAt": "2026-07-24T00:00:00.000Z"
+    }
+  ],
+  "categories": [
+    { "slug": "it-dev", "name": "IT·개발", "displayOrder": 1 },
+    { "slug": "design", "name": "디자인", "displayOrder": 2 },
+    { "slug": "data", "name": "데이터", "displayOrder": 3 }
+  ],
+  "skills": [
+    { "slug": "python", "name": "Python" },
+    { "slug": "javascript", "name": "JavaScript" },
+    { "slug": "sql", "name": "SQL" },
+    { "slug": "figma", "name": "Figma" },
+    { "slug": "react", "name": "React" }
+  ],
+  "qualifications": [
+    {
+      "slug": "engineer-info-processing",
+      "name": "정보처리기사",
+      "issuingOrganization": "한국산업인력공단"
+    }
+  ],
+  "majors": [
+    { "slug": "computer-science", "name": "컴퓨터공학과" },
+    { "slug": "design", "name": "디자인학과" }
+  ],
+  "occupations": [
+    {
+      "categorySlug": "it-dev",
+      "slug": "backend-developer",
+      "name": "백엔드 개발자",
+      "summary": "(DEMO) 서버, API, 데이터베이스를 설계하고 개발합니다.",
+      "description": "(DEMO placeholder) 실제 공식 데이터가 아닙니다. 서버 애플리케이션과 API를 설계·구현하고 데이터베이스를 다룹니다.",
+      "skills": [
+        { "slug": "python", "sourceExternalId": "DUMMY-source-1" },
+        { "slug": "sql", "sourceExternalId": "DUMMY-source-1" }
+      ],
+      "qualifications": [
+        { "slug": "engineer-info-processing", "sourceExternalId": "DUMMY-source-1" }
+      ],
+      "majors": [{ "slug": "computer-science", "sourceExternalId": "DUMMY-source-1" }]
+    },
+    {
+      "categorySlug": "it-dev",
+      "slug": "frontend-developer",
+      "name": "프론트엔드 개발자",
+      "summary": "(DEMO) 웹/앱 화면을 개발합니다.",
+      "description": "(DEMO placeholder) 실제 공식 데이터가 아닙니다. 사용자 인터페이스를 구현하고 사용성을 개선합니다.",
+      "skills": [
+        { "slug": "javascript", "sourceExternalId": "DUMMY-source-1" },
+        { "slug": "react", "sourceExternalId": "DUMMY-source-1" }
+      ],
+      "qualifications": [],
+      "majors": [{ "slug": "computer-science", "sourceExternalId": "DUMMY-source-1" }]
+    },
+    {
+      "categorySlug": "data",
+      "slug": "data-analyst",
+      "name": "데이터 분석가",
+      "summary": "(DEMO) 데이터를 분석해 인사이트를 도출합니다.",
+      "description": "(DEMO placeholder) 실제 공식 데이터가 아닙니다. 데이터를 수집·가공하여 비즈니스 의사결정을 지원합니다.",
+      "skills": [
+        { "slug": "sql", "sourceExternalId": "DUMMY-source-1" },
+        { "slug": "python", "sourceExternalId": "DUMMY-source-1" }
+      ],
+      "qualifications": [],
+      "majors": []
+    },
+    {
+      "categorySlug": "design",
+      "slug": "ux-designer",
+      "name": "UX 디자이너",
+      "summary": "(DEMO) 사용자 경험을 설계합니다.",
+      "description": "(DEMO placeholder) 실제 공식 데이터가 아닙니다. 사용자 리서치를 기반으로 서비스 화면과 흐름을 설계합니다.",
+      "skills": [{ "slug": "figma", "sourceExternalId": "DUMMY-source-1" }],
+      "qualifications": [],
+      "majors": [{ "slug": "design", "sourceExternalId": "DUMMY-source-1" }]
+    }
+  ]
+}
